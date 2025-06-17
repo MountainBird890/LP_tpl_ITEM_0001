@@ -10,41 +10,36 @@ body{
     font-family: "Zen Kaku Gothic Antique", sans-serif;
 }
 
-h2{
-    font-size: 120%;
-    text-align: left;
-    padding: 0.5rem;
-    margin: 0 2%;
-}
 
 
 /* 　　　グローバルナビゲーション　　　*/
+.lp-wrap{
+    max-width: 2000px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+
 .glo-nav{
     max-width: 2000px;
     width: 100%;
     height: auto;
+    margin:  0 auto;
     position: fixed;
     background-color: rgb(255, 255, 255);
     box-shadow: 1px 2px 5px #00000015;
+    z-index: 1;
 }
 
 .glo-nav-wrapper{
-    display: grid;
-    grid-template-columns: 1fr 8fr;
-    padding: 0 3%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 3%;
 }
 
 .logo{
     border: none;
     background-color: rgb(255, 255, 255);
 }
-
-.logo img{
-    max-width: 150px;
-    width: 100%;
-    height: auto;
-}
-
-
-
 

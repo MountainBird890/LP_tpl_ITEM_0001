@@ -1,31 +1,47 @@
 /*　　　　　　　　small-sp　　　　　　　　*/
 @media screen and (max-width:375px){
 #about{
-    padding-top: 8%;
+    padding-top: 10%;
 }
 
-#sales{
+#survice{
     padding-top: 6%;
 }
 
-#reform{
-    padding-top: 7%;
+#achievements{
+    padding-top: 15%;
+}
+
+#FAQ{
+    padding-top: 10%;
 }
 
 #company{
-    padding-top: 6%;
+    padding-top: 10%;
 }
 
-#contact{
-    padding-top: 1%;
+
+h2{
+    font-size: 1rem;
+    text-align: center;
+    padding: 0.5rem;
+    margin: 0 2%;
+}
+
+.logo img{
+    text-align: center;
+    max-width: 50px;
+    width: 100%;
+    height: auto;
 }
 
 .button-list{
     list-style: none;
-    display: flex;
-    justify-content: end;
-    gap: 3%;
+    display: grid;
+    justify-content: center;
+    gap: 10%;
     align-items: center;
+    padding-top: 10%;
 }
 
 .button-list button{
@@ -38,30 +54,105 @@
     font-family: "Noto Sans JP", serif;
     font-weight: 500;
     color: rgb(0, 0, 0);
-    font-size: 0.43rem;
+    font-size: 1.25rem;
     text-decoration: none;
 }
 
-.main-contents-title{
-    text-align: left;
-    font-size: 110%;
-    font-weight: bold;
-    padding: 2%;
-    margin: 0 2%;
+.hamburger {
+    text-align: center;
+    max-width: 40px;
+    width: 100%;
+    height: auto;
+    display: block;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: rgb(114, 114, 114);
+    font-size: 1.5rem;
 }
 
-.main-contents-title-explanation{
-    font-size: 0.87rem;
-    text-align: left;
-    padding: 0.5rem;
-    margin: 0 2%;
+.nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    width: 100%;
+    height: 100vh;
 }
+            
+.nav-links.active {
+    display: flex;
+    position: fixed;
+    inset: 0;
+    background-color: #ffffff;
+}
+            
+.nav-links li {
+    margin: 0.5rem 0;
+    margin-left: 0;
+}
+
+
+
+
+
+/*  CTA  */
+.cta1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -150%);
+    background-color: transparent;
+    border: 0.1rem solid #ffffff;
+    width: 12rem;
+    height: auto;
+    padding: 0.4rem 0;
+}
+
+.cta1 a{
+    font-size: 0.67rem;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.cta1 a:visited{
+    color: #ffffff !important;
+}
+
+.cta2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -150%);
+    background-color: transparent;
+    border: 0.1rem solid #000000;
+    width: 12rem;
+    height: auto;
+    padding: 0.4rem 0;
+}
+
+.cta2 a{
+    font-size: 0.67rem;
+    color: #000000;
+    text-decoration: none;
+}
+
+.cta2 a:visited{
+    color: #000000 !important;
+}
+
+
+
+
 
 
 /*  トップピクチャー  */
 .top-pic{
     text-align: center;
-    padding-top: 7%;
+    padding-top: 8%;
 }
 
 .top-pic img{
@@ -77,74 +168,263 @@
 
 
 
-/*　　　導入　　　*/
-.first-main-contents{
-    background-color: rgb(246, 246, 246);
-    padding: 1% 0 6% 0;
+/*　　　  感成工業について  　　　*/
+.first-section{
+    background-color: #ffffff;
+    padding: 7% 0 6% 0;
+    margin: 0 10%;
 }
 
-.first-main-contents-wrapper{
+.first-section-title{
+    font-size: 1rem;
+    text-align: left;
+    padding: 0 0.5rem 1.25rem 0.5rem;
+    margin: 0 2%;
+}
+
+.first-section-text{
+    text-align: left;
+    font-size: 0.81rem;
+    padding: 2%;
+    margin: 3% 2%;
+    border-radius: 0.87rem;
+}
+
+
+
+
+
+
+
+/*         Product/製品          */
+.second-section{
+    padding: 2% 0 10% 0;
+    background-image: linear-gradient(to bottom, #481AD3, #C2AEFF);
+    transform: skewY(3deg);
+}
+
+
+.second-section-title{
+    color: #ffffff;
+    font-size: 1.2rem;
+    text-align: left;
+    padding: 1.25rem 0.5rem 0 0.5rem;
+    margin: 0 10%;
+    transform: skewY(-3deg);
+}
+
+.second-title-underline{
+    padding: 0 0.5rem;
+    margin: 0 10%;
+    transform: skewY(-3deg);
+}
+
+.second-title-underline img{
+    max-width: 10rem;
+    width: 100%;
+    height: auto;
+    transform: translate(0, -70%);
+}
+
+
+.second-section-contents{
     display: grid;
     justify-content: center;
-    grid-template-columns: 1fr 1fr;
-    gap: 2%;
-    padding-top: 1%;
+    grid-template-columns: 1fr;
+    gap: 5% 2%;
+    padding: 1% 2% 0 2%;
+    margin: 5% 10%;
 }
 
-.first-main-contents-list{
-    font-size: 70%;
-    font-weight: bold;
-}
-
-.first-main-contents-img{
-    max-width: 350px;
-    width: 100%;
-    max-height: auto;
-    height: 100%;
-}
-
-
-
-
-
-
-
-/*  セールストーク  */
-.second-main-contents{
-    padding: 2% 0;
-}
-
-.second-main-contents-wrapper{
-    display: grid;
-    gap: 0.5rem;
-    grid-template-columns: 2fr 1.8fr;
-}
-
-.second-main-contents-boxL{
+.second-contents-box{
     padding: 5% 0;
+    background-color: #ffffff;
 }
 
-.second-main-contents-explanationT{
+.second-box-title{
+    color: #000000;
+    font-size: 1.12rem;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 0.5rem;
+    transform: skewY(-3deg);
+}
+
+.second-box-pic{
+    text-align: center;
+    transform: skewY(-3deg);
+}
+
+.second-box-pic img{
+    max-width: 150px;
+    width: 100%;
+    height: auto;
+    box-shadow:  4px 4px 4px #00000025;
+}
+
+.second-box-CVT{
+    text-align: center;
+    padding:1% 0 5% 0;
+    transform: skewY(-3deg);
+}
+
+
+.second-CVT-btn{
+    padding: 2% 20%;
+    background-color: transparent;
+    border: 2px solid #481AD3;
+    cursor: pointer;
+}
+
+.second-CVT-btn a{
+    font-weight: bold;
+    color: #481AD3;
+    text-decoration: none;
+}
+
+
+
+
+
+/*          Eauipment／設備         */  
+.third-section{
+    padding: 2% 0 10% 0;
+    background-color: #ffffff;
+    transform: skewY(3deg);
+}
+
+
+.third-section-title{
+    color: #481AD3;
+    font-size: 1.2rem;
+    text-align: left;
+    padding: 1.25rem 0.5rem 0 0.5rem;
+    margin: 0 10%;
+    transform: skewY(-3deg);
+}
+
+
+.third-title-underline{
+    padding: 0 0.5rem;
+    margin: 0 10%;
+    transform: skewY(-3deg);
+}
+
+.third-title-underline img{
+    max-width: 12rem;
+    width: 100%;
+    height: auto;
+    transform: translate(0, -60%);
+}
+
+.third-section-text{
+    margin: 0 13%;
+    text-align: left;
+    font-size: 1rem;
+    transform: skewY(-3deg);
+}
+
+
+.third-section-contents{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    gap: 5% 2%;
+    padding: 1% 2% 0 2%;
+    margin: 5% 10%;
+}
+
+.third-contents-box{
+    padding: 5% 0;
+    background-color: #ffffff;
+}
+
+.third-box-title{
+    color: #000000;
+    font-size: 1.12rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 0.5rem 0;
+    transform: skewY(-3deg);
+}
+
+.third-box-pic{
+    text-align: center;
+}
+
+.third-box-pic img{
+    max-width: 150px;
+    width: 100%;
+    height: auto;
+    box-shadow:  4px 4px 4px #00000025;
+}
+
+/*             Voices／お客様の声              */
+.fourth-section{
+    padding: 3% 0;
+    background-color: #FFAF5F;
+    transform: skewY(3deg);
+}
+
+.fourth-section-title{
+    color: #ffffff;
+    font-size: 1.2rem;
+    text-align: left;
+    padding: 1.25rem 0.5rem 0.67rem 0.5rem;
+    margin: 0 16%;
+    transform: skewY(-3deg);
+}
+
+
+.fourth-title-underline{
+    padding: 0 0.5rem;
+    margin: 0 10%;
+    transform: skewY(-3deg);
+}
+
+.fourth-title-underline img{
+    max-width: 13rem;
+    width: 100%;
+    height: auto;
+    transform: translate(10%, -80%);
+}
+
+.fourth-section-contents-3{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    gap: 3% 5%;
+    margin: 0 17% 15% 17%;
+    padding: 7% 5% 20% 5%;
+    transform: skewY(-3deg);
+    background-color: #ffffff;
+    border-radius: 2rem 0 0 0;
+}
+
+
+.fourth-box-title{
+    max-width: fit-content;
+    width: 100%;
+    height: auto;
     font-size: 0.81rem;
     font-weight: bold;
 }
 
-.second-main-contents-explanationB{
-    font-size: 0.75rem;
+.fourth-box-text{
+    font-size: 0.5rem;
     text-align: left;
-    padding-top: 0.2rem;
 }
 
-.second-main-contents-boxR{
+.fourth-contents-box-2{
     text-align: center;
-    max-width: 150px;
+    max-width: 400px;
     width: 100%;
     height: auto;
     margin: auto;
 }
 
-.second-main-contents-img{
-    max-width: 150px;
+.fourth-box-img-2{
+    max-width: 400px;
     width: 100%;
     height: auto;
 }
@@ -152,115 +432,159 @@
 
 
 
-
-
-
-
-/*  解決策の例示  */
-.third-main-contents{
-    background-color: rgb(246, 246, 246);
-    padding: 1% 0 6% 0;
-    text-align: center;
-}
-
-.third-main-contents-wrapper{
-    display: grid;
-    justify-content: center;
-    grid-template-columns: repeat(auto-fit,110px);
-    gap: 0.93rem;
-    padding-top: 7%;
-    margin: 0 5%;
-}
-
-.third-main-contents-wrapper-title{
-    max-width: 110px;
-    width: auto;
-    height: auto;
-    font-size: 0.81rem;
-    font-weight: bold;
-}
-
-.third-main-contents-wrapper-img{
-    max-width: 110px;
-    width: auto;
-    height: auto;
-}
-
-.main-contents-img{
-    margin: 0 10%;
-    padding: 1% 0;
-    max-width: 70%;
-    width: 100%;
-    max-height: auto;
-    height: 100%;
-}
-
-
-
-
-
-
-
-
-
-
-
-/*  BE-mailの特徴  */
+/*             FAQ／よくある質問            */
 #fourth_add{
     padding-bottom: 4%;
 }
 
-.fourth-main-contents{
-    padding: 4%;
+.fifth-section{
+    background-color: #ffffff;
+    padding: 5% 0 15% 0;
+    margin: 0 17%;
+    transform: skewY(3deg);
 }
 
-.fourth-main-contents-wrapper{
-    font-size: 0.875rem;
+
+.fifth-section-title{
+    text-align: left;
+    font-size: 1.2rem;
+    transform: skewY(-3deg);
+    margin: 0;
+    padding: 0;
+}
+
+.fifth-title-underline{
+    padding: 0 0.5rem;
+    margin: 0 10%;
+    transform: skewY(-3deg);
+}
+
+.fifth-title-underline img{
+    max-width: 11rem;
+    width: 100%;
+    height: auto;
+    transform: translate(-18%, -80%);
+}
+
+.fifth-contents{
+    transform: skewY(-3deg);
+}
+
+.fifth-box-btn{
     display: grid;
-    grid-template-columns: 1fr 3fr;
-    gap: 2% 2%;
-    padding: 5% 2% 12% 2%;
-    margin: 0 2%;
-    background-color: rgb(246, 246, 246);
-    border-radius: 0.93rem;
+    grid-template-columns: 1fr 10fr 1fr;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
 }
 
-
-
-
-
-
-
-/*  お問い合わせ  */
-#contact{
-    padding-bottom: 5%;
+.fifth-box-btn span{
+    font-size: 0.75rem;
+    text-align: left;
+    padding: 3%;
 }
 
-.fifth-main-contents-wrapper{
-    background-color: rgb(246, 246, 246);
-    padding: 2% 10%;
-}
-
-.fifth-main-contents-box{
+.fifth-box-btn::before{
+    content: "Q.";
+    display: block;
+    font-size: 1rem;
     text-align: center;
-    padding: 5% 3%;
-    background-color: white;
-    border-radius: 0.62rem;
 }
 
-.fifth-main-contents-box-img{
-    max-width: 500px;
+.fifth-box-btn::after{
+    content: "+";
+    color: #481AD3;
+    display: block;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.fifth-box-text{
+    display: none;
+}
+
+.fifth-box-text span{
+    font-size: 0.75rem;
+    text-align: left;
+    padding: 3%;
+}
+
+.fifth-box-text::before{
+    content: "A.";
+    display: block;
+    color: #d31a1a;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.fifth-box-text.active{
+    display: grid;
+    grid-template-columns: 1fr 11fr;
+    align-items: center;
+}
+
+
+
+
+
+/*            Company／会社概要            */
+.seventh-section{
+    background-color: #ffffff;
+    padding: 5% 0 15% 0;
+    margin: 0 17%;
+}
+
+.seventh-section-title{
+    text-align: left;
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.seventh-title-underline{
+    padding: 0;
+    margin: 0;
+}
+
+.seventh-title-underline img{
+    max-width: 15rem;
+    width: 100%;
+    height: auto;
+    transform: translate(1%, -40%);
+}
+
+.seventh-box-1{
+    max-width: 9.37rem;
     width: 100%;
     height: auto;
 }
 
+.seventh-box-1 img{
+    max-width: 9.37rem;
+    width: 100%;
+    height: auto;
+}
+
+.seventh-box-2{
+    font-size: 0.875rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2% 2%;
+    padding: 0 2% 12% 2%;
+    margin: 0 2%;
+}
 
 
 
 
 
 
-/*  会社情報とコピーライト  */
+
+
+
+/*          コピーライト          */
 .footer{
     text-align: center;
     font-size: 0.62rem;
@@ -280,28 +604,44 @@
     padding-top: 8%;
 }
 
-#sales{
+#survice{
     padding-top: 6%;
 }
 
-#reform{
-    padding-top: 7%;
+#achievements{
+    padding-top: 10%;
+}
+
+#FAQ{
+    padding-top: 10%;
 }
 
 #company{
-    padding-top: 6%;
+    padding-top: 10%;
 }
 
-#contact{
-    padding-top: 1%;
+
+h2{
+    font-size: 1.15rem;
+    text-align: center;
+    padding: 0.5rem;
+    margin: 0 2%;
+}
+
+.logo img{
+    text-align: center;
+    max-width: 50px;
+    width: 100%;
+    height: auto;
 }
 
 .button-list{
     list-style: none;
-    display: flex;
-    justify-content: end;
-    gap: 3%;
+    display: grid;
+    justify-content: center;
+    gap: 10%;
     align-items: center;
+    padding-top: 7%;
 }
 
 .button-list button{
@@ -314,24 +654,95 @@
     font-family: "Noto Sans JP", serif;
     font-weight: 500;
     color: rgb(0, 0, 0);
-    font-size: 0.43rem;
+    font-size: 1.25rem;
     text-decoration: none;
 }
 
-.main-contents-title{
-    text-align: left;
-    font-size: 130%;
-    font-weight: bold;
-    padding: 2%;
-    margin: 0 2%;
+.hamburger {
+    text-align: center;
+    max-width: 40px;
+    width: 100%;
+    height: auto;
+    display: block;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: rgb(114, 114, 114);
+    font-size: 1.8rem;
 }
 
-.main-contents-title-explanation{
-    font-size: 1rem;
-    text-align: left;
-    padding: 0.5rem;
-    margin: 0 2%;
+.nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    width: 100%;
+    height: 100vh;
 }
+            
+.nav-links.active {
+    display: flex;
+    position: fixed;
+    inset: 0;
+    background-color: #ffffff;
+}
+            
+.nav-links li {
+    margin: 0.5rem 0;
+    margin-left: 0;
+}
+
+/*  CTA  */
+.cta1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -160%);
+    background-color: transparent;
+    border: 0.1rem solid #ffffff;
+    width: 14rem;
+    height: auto;
+    padding: 0.4rem 0;
+}
+
+.cta1 a{
+    font-size: 0.67rem;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.cta1 a:visited{
+    color: #ffffff !important;
+}
+
+.cta2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -150%);
+    background-color: transparent;
+    border: 0.1rem solid #000000;
+    width: 15rem;
+    height: auto;
+    padding: 0.7rem 0;
+}
+
+.cta2 a{
+    font-size: 0.67rem;
+    color: #000000;
+    text-decoration: none;
+}
+
+.cta2 a:visited{
+    color: #000000 !important;
+}
+
+
+
+
 
 
 
@@ -339,7 +750,7 @@
 /*  トップピクチャー  */
 .top-pic{
     text-align: center;
-    padding-top: 7%;
+    padding-top: 8%;
 }
 
 .top-pic img{
@@ -356,188 +767,430 @@
 
 
 
-/*　　　導入文　　　*/
-.first-main-contents{
-    background-color: rgb(246, 246, 246);
-    padding: 1% 0 6% 0;
+/*　　　  感成工業について  　　　*/
+.first-section{
+    background-color: #ffffff;
+    padding: 8% 0 6% 0;
+    margin: 0 13%;
 }
 
-.first-main-contents-wrapper{
+.first-section-title{
+    font-size: 1.15rem;
+    text-align: left;
+    padding: 0 0.5rem 1.25rem 0.5rem;
+    margin: 0 2%;
+}
+
+.first-section-text{
+    text-align: left;
+    font-size: 0.87rem;
+    padding: 2%;
+    margin: 2%;
+    border-radius: 0.87rem;
+}
+
+
+
+
+
+/*         Product/製品          */
+.second-section{
+    padding: 2% 0 10% 0;
+    background-image: linear-gradient(to bottom, #481AD3, #C2AEFF);
+    transform: skewY(3deg);
+}
+
+.second-section-title{
+    color: #ffffff;
+    font-size: 1.4rem;
+    text-align:left;
+    padding: 1.25rem 0.5rem 0.67rem 0.5rem;
+    margin: 0 13%;
+    transform: skewY(-3deg);
+}
+
+
+.second-title-underline{
+    padding: 0 0.5rem;
+    margin: 0 10%;
+    transform: skewY(-3deg);
+}
+
+.second-title-underline img{
+    max-width: 12rem;
+    width: 100%;
+    height: auto;
+    transform: translate(6%, -110%);
+}
+
+
+.second-section-contents{
     display: grid;
     justify-content: center;
-    grid-template-columns: 1fr 1fr;
-    gap: 2%;
-    padding-top: 1%;
+    grid-template-columns: 1fr;
+    gap: 5% 2%;
+    padding: 1% 2% 0 2%;
+    margin: 5% 12%;
 }
 
-.first-main-contents-list{
-    font-size: 80%;
-    font-weight: bold;
-}
-
-.first-main-contents-img{
-    max-width: 350px;
-    width: 100%;
-    max-height: auto;
-    height: 100%;
-}
-
-
-
-
-
-
-
-/*  セールストーク  */
-.second-main-contents{
-    padding: 2% 0;
-}
-
-.second-main-contents-wrapper{
-    display: grid;
-    gap: 0.5rem;
-    grid-template-columns: 2fr 1.8fr;
-}
-
-.second-main-contents-boxL{
+.second-contents-box{
     padding: 5% 0;
+    background-color: #ffffff;
 }
 
-.second-main-contents-explanationT{
-    font-size: 0.93rem;
+.second-box-title{
+    color: #000000;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 0.5rem;
+    transform: skewY(-3deg);
+}
+
+
+.second-box-pic{
+    text-align: center;
+    transform: skewY(-3deg);
+}
+
+.second-box-pic img{
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+    box-shadow:  4px 4px 4px #00000025;
+}
+
+.second-box-CVT{
+    text-align: center;
+    padding:1% 0 5% 0;
+    transform: skewY(-3deg);
+}
+
+
+.second-box-CVT button{
+    padding: 2% 20%;
+    background-color: transparent;
+    border: 2px solid #481AD3;
+    cursor: pointer;
+}
+
+.second-CVT-btn a{
+    font-weight: bold;
+    color: #481AD3;
+    text-decoration: none;
+}
+
+
+
+
+
+/*          Eauipment／設備         */  
+.third-section{
+    padding: 2% 0 10% 0;
+    background-color: #ffffff;
+    transform: skewY(3deg);
+}
+
+.third-section-title{
+    color: #481AD3;
+    font-size: 1.4rem;
+    text-align:left;
+    padding: 1.25rem 0.5rem 0.67rem 0.5rem;
+    margin: 0 13%;
+    transform: skewY(-3deg);
+}
+
+
+.third-title-underline{
+    padding: 0 0.5rem;
+    margin: 0 10%;
+    transform: skewY(-3deg);
+}
+
+.third-title-underline img{
+    max-width: 14rem;
+    width: 100%;
+    height: auto;
+    transform: translate(5%, -110%);
+}
+
+
+.third-section-text{
+    margin: 0 15%;
+    text-align: left;
+    font-size: 1rem;
+    transform: skewY(-3deg);
+}
+
+
+.third-section-contents{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    gap: 5% 2%;
+    padding: 1% 2% 0 2%;
+    margin: 5% 12%;
+}
+
+.third-contents-box{
+    padding: 5% 0;
+    background-color: #ffffff;
+}
+
+.third-box-title{
+    color: #000000;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 0.5rem 0;
+    transform: skewY(-3deg);
+}
+
+
+.third-box-pic{
+    text-align: center;
+}
+
+.third-box-pic img{
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+    box-shadow:  4px 4px 4px #00000025;
+}
+
+
+
+
+/*             Voices／お客様の声              */
+.fourth-section{
+    padding: 3% 0 5% 0;
+    background-color: #FFAF5F;
+    transform: skewY(3deg);
+}
+
+.fourth-section-title{
+    color: #ffffff;
+    font-size: 1.4rem;
+    text-align: left;
+    padding: 1.25rem 0.5rem 0.67rem 0.5rem;
+    margin: 0 16%;
+    transform: skewY(-3deg);
+}
+
+
+.fourth-title-underline{
+    padding: 0 0.5rem;
+    margin: 0 10%;
+    transform: skewY(-3deg);
+}
+
+.fourth-title-underline img{
+    max-width: 15rem;
+    width: 100%;
+    height: auto;
+    transform: translate(10%, -80%);
+}
+
+.fourth-section-contents-3{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    gap: 3% 5%;
+    margin: 0 17% 15% 17%;
+    padding: 7% 5% 25% 5%;
+    transform: skewY(-3deg);
+    background-color: #ffffff;
+    border-radius: 2rem 0 0 0;
+}
+
+
+.fourth-box-title{
+    max-width: fit-content;
+    width: 100%;
+    height: auto;
+    font-size: 1rem;
     font-weight: bold;
 }
 
-.second-main-contents-explanationB{
+.fourth-box-text{
     font-size: 0.81rem;
     text-align: left;
-    padding-top: 0.3rem;
+    padding-top: 1rem;
 }
 
-.second-main-contents-boxR{
+.fourth-contents-box-2{
     text-align: center;
-    max-width: 150px;
+    max-width: 400px;
     width: 100%;
     height: auto;
     margin: auto;
 }
 
-.second-main-contents-img{
-    max-width: 150px;
+.fourth-box-img-2{
+    max-width: 400px;
     width: 100%;
     height: auto;
 }
 
 
 
-
-
-
-
-
-/*  解決策の例示  */
-.third-main-contents{
-    background-color: rgb(246, 246, 246);
-    padding: 1% 0 6% 0;
-    text-align: center;
-}
-
-.third-main-contents-wrapper{
-    display: grid;
-    justify-content: center;
-    grid-template-columns: repeat(auto-fit,130px);
-    gap: 0.93rem;
-    padding-top: 7%;
-    margin: 0 5%;
-}
-
-.third-main-contents-wrapper-title{
-    max-width: 130px;
-    width: auto;
-    height: auto;
-    font-size: 0.81rem;
-    font-weight: bold;
-}
-
-.third-main-contents-wrapper-img{
-    max-width: 130px;
-    width: auto;
-    height: auto;
-}
-
-.main-contents-img{
-    margin: 0 10%;
-    padding: 1% 0;
-    max-width: 70%;
-    width: 100%;
-    max-height: auto;
-    height: 100%;
-}
-
-
-
-
-
-
-
-
-
-/*  BE-mailの特徴  */
+/*             FAQ／よくある質問            */
 #fourth_add{
     padding-bottom: 8%;
 }
 
-.fourth-main-contents{
-    padding: 5%;
+.fifth-section{
+    background-color: #ffffff;
+    padding: 5% 0 15% 0;
+    margin: 0 13%;
+    transform: skewY(3deg);
 }
 
-.fourth-main-contents-wrapper{
-    font-size: 1rem;
+
+.fifth-section-title{
+    text-align: left;
+    font-size: 1.4rem;
+    transform: skewY(-3deg);
+    margin: 0 5%;
+    padding: 0;
+}
+
+.fifth-title-underline{
+    padding: 0 0.5rem;
+    margin: 0 10%;
+    transform: skewY(-3deg);
+}
+
+.fifth-title-underline img{
+    max-width: 11rem;
+    width: 100%;
+    height: auto;
+    transform: translate(-10%, -70%);
+}
+
+
+.fifth-contents{
+    border-radius: 0.81rem;
+    background-color: #ffffff;
+    margin: 0 6%;
+    transform: skewY(-3deg);
+}
+
+.fifth-box-btn{
     display: grid;
-    grid-template-columns: 1fr 3fr;
-    gap: 2% 2%;
-    padding: 5% 2% 12% 2%;
-    margin: 0 2%;
-    background-color: rgb(246, 246, 246);
-    border-radius: 0.93rem;
+    grid-template-columns: 1fr 15fr 1fr;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
 }
 
-
-
-
-
-
-
-/*  お問い合わせ  */
-#contact{
-    padding-bottom: 7%;
+.fifth-box-btn span{
+    font-size: 0.75rem;
+    text-align: left;
+    padding: 3%;
 }
 
-.fifth-main-contents-wrapper{
-    background-color: rgb(246, 246, 246);
-    padding: 2% 10%;
-}
-
-.fifth-main-contents-box{
+.fifth-box-btn::before{
+    content: "Q.";
+    display: block;
+    font-size: 1rem;
     text-align: center;
-    padding: 5% 3%;
-    background-color: white;
-    border-radius: 0.62rem;
 }
 
-.fifth-main-contents-box-img{
-    max-width: 500px;
+.fifth-box-btn::after{
+    content: "+";
+    color: #481AD3;
+    display: block;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.fifth-box-text{
+    display: none;
+}
+
+.fifth-box-text span{
+    font-size: 0.75rem;
+    text-align: left;
+    padding: 3%;
+}
+
+.fifth-box-text::before{
+    content: "A.";
+    display: block;
+    color: #d31a1a;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.fifth-box-text.active{
+    display: grid;
+    grid-template-columns: 1fr 16fr;
+    align-items: center;
+}
+
+
+
+
+
+/*            Company／会社概要            */
+.seventh-section{
+    background-color: #ffffff;
+    padding: 5% 0 15% 0;
+    margin: 0 13%;
+}
+
+.seventh-section-title{
+    text-align: left;
+    font-size: 1.4rem;
+    margin: 0 5%;
+    padding: 0;
+}
+
+.seventh-title-underline{
+    padding: 0;
+    margin: 0 5%;
+}
+
+.seventh-title-underline img{
+    max-width: 20rem;
+    width: 100%;
+    height: auto;
+    transform: translate(0%, -50%);
+}
+
+.seventh-contents{
+    margin: 0 3%;
+}
+
+.seventh-box-1{
+    max-width: 9.37rem;
     width: 100%;
     height: auto;
 }
 
+.seventh-box-1 img{
+    max-width: 9.37rem;
+    width: 100%;
+    height: auto;
+}
+
+.seventh-box-2{
+    font-size: 0.875rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2% 2%;
+    padding: 0 2% 12% 2%;
+    margin: 0 2%;
+}
 
 
 
 
 
-
-/*  会社情報とコピーライト  */
+/*          コピーライト          */
 .footer{
     text-align: center;
     font-size: 0.62rem;
@@ -551,34 +1204,60 @@
 
 
 
-/*　　　　　　　　large-sp　　　　　　　　*/
-@media screen and (min-width:425px) and (max-width:768px){
+
+
+
+
+
+
+
+
+
+
+
+/*　　　　　　　　large-sp-1　　　　　　　*/
+@media screen and (min-width:425px) and (max-width:500px){
 #about{
     padding-top: 8%;
 }
 
-#sales{
+#survice{
     padding-top: 6%;
 }
 
-#reform{
-    padding-top: 7%;
+#achievements{
+    padding-top: 8%;
+}
+
+#FAQ{
+    padding-top: 10%;
 }
 
 #company{
-    padding-top: 6%;
+    padding-top: 10%;
 }
 
-#contact{
-    padding-top: 1%;
+h2{
+    font-size: 1.37rem;
+    text-align: center;
+    padding: 0.5rem;
+    margin: 0 2%;
+}
+
+.logo img{
+    text-align: center;
+    max-width: 70px;
+    width: 100%;
+    height: auto;
 }
 
 .button-list{
     list-style: none;
-    display: flex;
-    justify-content: end;
-    gap: 3%;
+    display: grid;
+    justify-content: center;
+    gap: 10%;
     align-items: center;
+    padding-top: 6%;
 }
 
 .button-list button{
@@ -591,24 +1270,93 @@
     font-family: "Noto Sans JP", serif;
     font-weight: 500;
     color: rgb(0, 0, 0);
-    font-size: 0.62rem;
+    font-size: 1.3rem;
     text-decoration: none;
 }
 
-.main-contents-title{
-    text-align: left;
-    font-size: 150%;
-    font-weight: bold;
-    padding: 1.5%;
-    margin: 0 2%;
+.hamburger {
+    text-align: center;
+    max-width: 40px;
+    width: 100%;
+    height: auto;
+    display: block;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: rgb(114, 114, 114);
+    font-size: 1.8rem;
 }
 
-.main-contents-title-explanation{
-    font-size: 1.12rem;
-    text-align: left;
-    padding: 0.5rem;
-    margin: 0 2%;
+.nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    width: 100%;
+    height: 100vh;
 }
+            
+.nav-links.active {
+    display: flex;
+    position: fixed;
+    inset: 0;
+    background-color: #ffffff;
+}
+            
+.nav-links li {
+    margin: 0.5rem 0;
+    margin-left: 0;
+}
+
+/*  CTA  */
+.cta1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -160%);
+    background-color: transparent;
+    border: 0.1rem solid #ffffff;
+    width: 18rem;
+    height: auto;
+    padding: 0.6rem 0;
+}
+
+.cta1 a{
+    font-size: 0.67rem;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.cta1 a:visited{
+    color: #ffffff !important;
+}
+
+.cta2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -150%);
+    background-color: transparent;
+    width: 16rem;
+    height: auto;
+    padding: 0.7rem 0;
+}
+
+.cta2 a{
+    font-size: 0.67rem;
+    color: #000000;
+    text-decoration: none;
+}
+
+.cta2 a:visited{
+    color: #000000 !important;
+}
+
+
+
 
 
 
@@ -616,7 +1364,7 @@
 /*  トップピクチャー  */
 .top-pic{
     text-align: center;
-    padding-top: 7%;
+    padding-top: 7.5%;
 }
 
 .top-pic img{
@@ -633,29 +1381,616 @@
 
 
 
-/*　　　導入文　　　*/
-.first-main-contents{
-    background-color: rgb(246, 246, 246);
+/*　　　  感成工業について  　　　*/
+.first-section{
+    background-color: #ffffff;
     padding: 1% 0 4% 0;
+    margin: 0 13%;
 }
 
-.first-main-contents-wrapper{
+.first-section-title{
+    font-size: 1.37rem;
+    text-align: left;
+    padding: 0 0.5rem 1.25rem 0.5rem;
+    margin: 0 2%;
+}
+
+.first-section-text{
+    text-align: left;
+    font-size: 1rem;
+    padding: 1.5%;
+    margin: 2%;
+    border-radius: 0.87rem;
+}
+
+
+
+
+/*         Product/製品          */
+.second-section{
+    padding: 3% 0 10% 0;
+    background-image: linear-gradient(to bottom, #481AD3, #C2AEFF);
+    transform: skewY(3deg);
+}
+
+.second-section-title{
+    color: #ffffff;
+    font-size: 1.4rem;
+    text-align:left;
+    padding: 1.25rem 0.5rem 0.67rem 0.5rem;
+    margin: 0 13%;
+    transform: skewY(-3deg);
+}
+
+
+.second-title-underline{
+    padding: 0 0.5rem;
+    margin: 0 10%;
+    transform: skewY(-3deg);
+}
+
+.second-title-underline img{
+    max-width: 12rem;
+    width: 100%;
+    height: auto;
+    transform: translate(7%, -110%);
+}
+
+.second-section-contents{
     display: grid;
     justify-content: center;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 2%;
-    padding-top: 1%;
+    grid-template-columns: 1fr;
+    gap: 5% 0;
+    padding: 1% 2% 0 2%;
+    margin: 5% 12%;
 }
 
-.first-main-contents-list{
-    font-size: 80%;
+.second-contents-box{
+    padding: 5% 0;
+    background-color: #ffffff;
+}
+
+.second-box-title{
+    color: #000000;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 0.5rem;
+    transform: skewY(-3deg);
+}
+
+
+
+.second-box-pic{
+    text-align: center;
+    transform: skewY(-3deg);
+}
+
+.second-box-pic img{
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+    box-shadow:  4px 4px 4px #00000025;
+}
+
+
+.second-box-CVT{
+    text-align: center;
+    padding:1% 0 5% 0;
+    transform: skewY(-3deg);
+}
+
+
+.second-box-CVT button{
+    padding: 2% 20%;
+    background-color: transparent;
+    border: 2px solid #481AD3;
+    cursor: pointer;
+}
+
+.second-CVT-btn a{
+    font-weight: bold;
+    color: #481AD3;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+/*          Eauipment／設備         */  
+.third-section{
+    padding: 3% 0 10% 0;
+    background-color: #ffffff;
+    transform: skewY(3deg);
+}
+
+.third-section-title{
+    color: #481AD3;
+    font-size: 1.4rem;
+    text-align:left;
+    padding: 0 0.5rem 0.67rem 0.5rem;
+    margin: 0 15%;
+    transform: skewY(-3deg);
+}
+
+
+.third-title-underline{
+    padding: 0 0.5rem;
+    margin: 0 10%;
+    transform: skewY(-3deg);
+}
+
+.third-title-underline img{
+    max-width: 14rem;
+    width: 100%;
+    height: auto;
+    transform: translate(10%, -100%);
+}
+
+
+.third-section-text{
+    margin: 0 17%;
+    text-align: left;
+    font-size: 1rem;
+    transform: skewY(-3deg);
+}
+
+
+.third-section-contents{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    gap: 5% 0;
+    padding: 1% 2% 0 2%;
+    margin: 5% 12%;
+}
+
+.third-contents-box{
+    padding: 5% 0;
+    background-color: #ffffff;
+}
+
+.third-box-title{
+    color: #000000;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 0.5rem 0;
+    transform: skewY(-3deg);
+}
+
+
+
+.third-box-pic{
+    text-align: center;
+}
+
+.third-box-pic img{
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+    box-shadow:  4px 4px 4px #00000025;
+}
+
+
+
+
+
+
+/*             Voices／お客様の声              */
+.fourth-section{
+    padding: 3% 0 5% 0;
+    background-color: #FFAF5F;
+    transform: skewY(3deg);
+}
+
+.fourth-section-title{
+    color: #ffffff;
+    font-size: 1.4rem;
+    text-align: left;
+    padding: 1.25rem 0.5rem 0.67rem 0.5rem;
+    margin: 0 16%;
+    transform: skewY(-3deg);
+}
+
+
+.fourth-title-underline{
+    padding: 0 0.5rem;
+    margin: 0 10%;
+    transform: skewY(-3deg);
+}
+
+.fourth-title-underline img{
+    max-width: 16rem;
+    width: 100%;
+    height: auto;
+    transform: translate(10%, -80%);
+}
+
+.fourth-section-contents-3{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    gap: 3% 5%;
+    margin: 0 17% 15% 17%;
+    padding: 7% 5% 25% 5%;
+    transform: skewY(-3deg);
+    background-color: #ffffff;
+    border-radius: 1.5rem 0 0 0;
+}
+
+
+.fourth-box-title{
+    max-width: fit-content;
+    width: 100%;
+    height: auto;
+    font-size: 1.15rem;
     font-weight: bold;
 }
 
-.first-main-contents-img{
-    max-width: 350px;
+.fourth-box-text{
+    font-size: 0.81rem;
+    text-align: left;
+    padding-top: 1rem;
+}
+
+.fourth-contents-box-2{
+    text-align: center;
+    max-width: 400px;
     width: 100%;
-    max-height: auto;
+    height: auto;
+    margin: auto;
+}
+
+.fourth-box-img-2{
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+/*             FAQ／よくある質問            */
+#fourth_add{
+    padding-bottom: 3%;
+}
+
+.fifth-section{
+    background-color: #ffffff;
+    padding: 5% 0 15% 0;
+    margin: 0 13%;
+    transform: skewY(3deg);
+}
+
+.fifth-section-title{
+    text-align: left;
+    font-size: 1.4rem;
+    transform: skewY(-3deg);
+    margin: 0 5%;
+    padding: 0;
+}
+
+.fifth-title-underline{
+    padding: 0 0.5rem;
+    margin: 0 10%;
+    transform: skewY(-3deg);
+}
+
+.fifth-title-underline img{
+    max-width: 12rem;
+    width: 100%;
+    height: auto;
+    transform: translate(-10%, -60%);
+}
+
+.fifth-contents{
+    border-radius: 0.81rem;
+    background-color: #ffffff;
+    margin: 0 6%;
+    transform: skewY(-3deg);
+}
+
+.fifth-box-btn{
+    display: grid;
+    grid-template-columns: 1fr 15fr 1fr;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.fifth-box-btn span{
+    font-size: 0.87rem;
+    text-align: left;
+    padding: 3%;
+}
+
+.fifth-box-btn::before{
+    content: "Q.";
+    display: block;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.fifth-box-btn::after{
+    content: "+";
+    color: #481AD3;
+    display: block;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.fifth-box-text{
+    display: none;
+}
+
+.fifth-box-text span{
+    font-size: 0.87rem;
+    text-align: left;
+    padding: 3%;
+}
+
+.fifth-box-text::before{
+    content: "A.";
+    display: block;
+    color: #d31a1a;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.fifth-box-text.active{
+    display: grid;
+    grid-template-columns: 1fr 16fr;
+    align-items: center;
+}
+
+
+
+
+/*            Company／会社概要            */
+.seventh-section{
+    background-color: #ffffff;
+    padding: 0 0 15% 0;
+    margin: 0 13%;
+}
+
+.seventh-section-title{
+    text-align: left;
+    font-size: 1.4rem;
+    margin: 0 5%;
+    padding: 0;
+}
+
+.seventh-title-underline{
+    padding: 0;
+    margin: 0 1%;
+}
+
+.seventh-title-underline img{
+    max-width: 17rem;
+    width: 100%;
+    height: auto;
+    transform: translate(5%, -50%);
+}
+
+.seventh-contents{
+    margin: 0 4%;
+}
+
+.seventh-box-1{
+    max-width: 9.37rem;
+    width: 100%;
+    height: auto;
+}
+
+.seventh-box-1 img{
+    max-width: 9.37rem;
+    width: 100%;
+    height: auto;
+}
+
+.seventh-box-2{
+    font-size: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2% 2%;
+    padding: 0 2% 12% 2%;
+    margin: 0 2%;
+}
+
+
+
+
+
+/*          コピーライト          */
+.footer{
+    text-align: center;
+    font-size: 0.81rem;
+    font-weight: bold;
+    background-color: rgb(144, 144, 144);
+    padding: 1% 0;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*　　　　　　　　large-sp-2　　　　　　　　*/
+@media screen and (min-width:500px) and (max-width:600px){
+#about{
+    padding-top: 8%;
+}
+
+#survice{
+    padding-top: 6%;
+}
+
+#achievements{
+    padding-top: 8%;
+}
+
+#FAQ{
+    padding-top: 10%;
+}
+
+#company{
+    padding-top: 10%;
+}
+
+h2{
+    font-size: 1.37rem;
+    text-align: center;
+    padding: 0.5rem;
+    margin: 0 2%;
+}
+
+.logo img{
+    text-align: center;
+    max-width: 70px;
+    width: 100%;
+    height: auto;
+}
+
+.button-list{
+    list-style: none;
+    display: grid;
+    justify-content: center;
+    gap: 10%;
+    align-items: center;
+    padding-top: 5%;
+}
+
+.button-list button{
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    border: none;
+}
+
+.button-list button div{
+    font-family: "Noto Sans JP", serif;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+.hamburger {
+    text-align: center;
+    max-width: 40px;
+    width: 100%;
+    height: auto;
+    display: block;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: rgb(114, 114, 114);
+    font-size: 1.8rem;
+}
+
+.nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    width: 100%;
+    height: 100vh;
+}
+            
+.nav-links.active {
+    display: flex;
+    position: fixed;
+    inset: 0;
+    background-color: #ffffff;
+}
+            
+.nav-links li {
+    margin: 0.5rem 0;
+    margin-left: 0;
+}
+
+/*  CTA  */
+.cta1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -150%);
+    background-color: transparent;
+    border: 0.1rem solid #ffffff;
+    width: 21rem;
+    height: auto;
+    padding: 0.8rem 0;
+}
+
+.cta1 a{
+    font-size: 0.8rem;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.cta1 a:visited{
+    color: #ffffff !important;
+}
+
+.cta2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -150%);
+    background-color: transparent;
+    width: 20rem;
+    height: auto;
+    padding: 0.7rem 0;
+}
+
+.cta2 a{
+    font-size: 0.8rem;
+    color: #000000;
+    text-decoration: none;
+}
+
+.cta2 a:visited{
+    color: #000000 !important;
+}
+
+
+
+
+
+
+
+/*  トップピクチャー  */
+.top-pic{
+    text-align: center;
+    padding-top: 6%;
+}
+
+.top-pic img{
+    max-width: 2000px;
+    width: 100%;
+    max-height: 1000px;
     height: 100%;
 }
 
@@ -665,89 +2000,614 @@
 
 
 
-/*  セールストーク  */
-.second-main-contents{
-    padding: 3% 0;
+
+/*　　　  感成工業について  　　　*/
+.first-section{
+    background-color: #ffffff;
+    padding: 1% 0 4% 0;
+    margin: 0 15%;
 }
 
-.second-main-contents-wrapper{
-    display: grid;
-    gap: 0.7rem;
-    grid-template-columns: 2fr 1.8fr;
-}
-
-.second-main-contents-boxL{
-    padding: 5% 0;
-}
-
-.second-main-contents-explanationT{
-    font-size: 1.06rem;
-    font-weight: bold;
-}
-
-.second-main-contents-explanationB{
-    font-size: 0.93rem;
+.first-section-title{
+    font-size: 1.37rem;
     text-align: left;
-    padding-top: 0.5rem;
+    padding: 0 0.5rem 1.25rem 0.5rem;
+    margin: 0 2%;
 }
 
-.second-main-contents-boxR{
-    text-align: center;
-    max-width: 150px;
+.first-section-text{
+    text-align: left;
+    font-size: 1rem;
+    padding: 1.5%;
+    margin: 2%;
+    border-radius: 0.87rem;
+}
+
+
+
+
+
+/*         Product/製品          */
+.second-section{
+    padding: 3% 0 10% 0;
+    background-image: linear-gradient(to bottom, #481AD3, #C2AEFF);
+    transform: skewY(3deg);
+}
+
+.second-section-title{
+    color: #ffffff;
+    font-size: 1.81rem;
+    text-align: left;
+    padding: 1.25rem 0.5rem 0.67rem 0.5rem;
+    margin: 0 15%;
+    transform: skewY(-3deg);
+}
+
+
+.second-title-underline{
+    padding: 0 0.5rem;
+    margin: 0 10%;
+    transform: skewY(-3deg);
+}
+
+.second-title-underline img{
+    max-width: 15rem;
     width: 100%;
     height: auto;
-    margin: auto;
-}
-
-.second-main-contents-img{
-    max-width: 150px;
-    width: 100%;
-    height: auto;
+    transform: translate(10%, -100%);
 }
 
 
-
-
-
-
-
-
-/*  解決策の例示  */
-.third-main-contents{
-    background-color: rgb(246, 246, 246);
-    padding: 1% 0 6% 0;
-    text-align: center;
-}
-
-.third-main-contents-wrapper{
+.second-section-contents{
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(auto-fit,150px);
-    gap: 0.93rem;
-    padding-top: 7%;
-    margin: 0 5%;
+    grid-template-columns: 1fr 1fr;
+    gap: 5%;
+    padding: 1% 2% 0 2%;
+    margin: 5% 14%;
+    transform: skewY(-3deg);
 }
 
-.third-main-contents-wrapper-title{
-    max-width: 150px;
-    width: auto;
+.second-contents-box{
+    padding: 5% 0;
+    background-color: #ffffff;
+}
+
+.second-box-title{
+    color: #000000;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 0.5rem;
+}
+
+
+.second-box-pic{
+    text-align: center;
+}
+
+.second-box-pic img{
+    max-width: 130px;
+    width: 100%;
+    height: auto;
+    box-shadow:  4px 4px 4px #00000025;
+}
+
+
+.second-box-CVT{
+    text-align: center;
+    padding:1% 0 5% 0;
+}
+
+
+.second-box-CVT button{
+    padding: 2% 20%;
+    background-color: transparent;
+    border: 2px solid #481AD3;
+    cursor: pointer;
+}
+
+
+.second-CVT-btn a{
+    font-weight: bold;
+    color: #481AD3;
+    text-decoration: none;
+}
+
+
+
+
+/*          Eauipment／設備         */  
+.third-section{
+    padding: 3% 0 10% 0;
+    background-color: #ffffff;
+    transform: skewY(3deg);
+}
+
+.third-section-title{
+    color: #481AD3;
+    font-size: 1.81rem;
+    text-align: left;
+    padding: 0 0.5rem 0.67rem 0.5rem;
+    margin: 0 15%;
+    transform: skewY(-3deg);
+}
+
+
+.third-title-underline{
+    padding: 0 0.5rem;
+    margin: 0 10%;
+    transform: skewY(-3deg);
+}
+
+.third-title-underline img{
+    max-width: 18rem;
+    width: 100%;
+    height: auto;
+    transform: translate(8%, -100%);
+}
+
+.third-section-text{
+    margin: 0 16%;
+    text-align: left;
+    font-size: 1rem;
+    transform: skewY(-3deg);
+}
+
+
+.third-section-contents{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 5%;
+    padding: 1% 2% 0 2%;
+    margin: 5% 14%;
+    transform: skewY(-3deg);
+}
+
+.third-contents-box{
+    padding: 5% 0;
+    background-color: #ffffff;
+}
+
+.third-box-title{
+    color: #000000;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 0.5rem;
+    transform: skewY(-3deg);
+}
+
+
+.third-box-pic{
+    text-align: center;
+    transform: skewY(-3deg);
+}
+
+.third-box-pic img{
+    max-width: 130px;
+    width: 100%;
+    height: auto;
+    box-shadow:  4px 4px 4px #00000025;
+}
+
+
+
+
+
+/*             Voices／お客様の声              */
+.fourth-section{
+    padding: 3% 0 5% 0;
+    background-color: #FFAF5F;
+    transform: skewY(3deg);
+}
+
+.fourth-section-title{
+    color: #ffffff;
+    font-size: 1.81rem;
+    text-align: left;
+    padding: 1.25rem 0.5rem 0.67rem 0.5rem;
+    margin: 0 16%;
+    transform: skewY(-3deg);
+}
+
+
+.fourth-title-underline{
+    padding: 0 0.5rem;
+    margin: 0 10%;
+    transform: skewY(-3deg);
+}
+
+.fourth-title-underline img{
+    max-width: 16rem;
+    width: 100%;
+    height: auto;
+    transform: translate(12%, -80%);
+}
+
+.fourth-section-contents-3{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    gap: 3% 5%;
+    margin: 0 17% 15% 17%;
+    padding: 7% 5% 25% 5%;
+    transform: skewY(-3deg);
+    background-color: #ffffff;
+    border-radius: 1.5rem 0 0 0;
+}
+
+
+.fourth-box-title{
+    max-width: fit-content;
+    width: 100%;
     height: auto;
     font-size: 1.25rem;
     font-weight: bold;
 }
 
-.third-main-contents-wrapper-img{
-    max-width: 150px;
-    width: auto;
+.fourth-box-text{
+    font-size: 1rem;
+    text-align: left;
+    padding-top: 1rem;
+}
+
+.fourth-contents-box-2{
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+.fourth-box-img-2{
+    max-width: 400px;
+    width: 100%;
     height: auto;
 }
 
-.main-contents-img{
+
+
+
+
+/*             FAQ／よくある質問            */
+#fourth_add{
+    padding-bottom: 3%;
+}
+
+.fifth-section{
+    background-color: #ffffff;
+    padding: 5% 0 15% 0;
+    margin: 0 13%;
+    transform: skewY(3deg);
+}
+
+.fifth-section-title{
+    text-align: left;
+    font-size: 1.81rem;
+    transform: skewY(-3deg);
+    margin: 0 5%;
+    padding: 0;
+}
+
+
+.fifth-title-underline{
+    padding: 0 0.5rem;
     margin: 0 10%;
-    padding: 2% 0;
-    max-width: 60%;
+    transform: skewY(-3deg);
+}
+
+.fifth-title-underline img{
+    max-width: 14rem;
     width: 100%;
-    max-height: auto;
+    height: auto;
+    transform: translate(-10%, -60%);
+}
+
+
+.fifth-contents{
+    border-radius: 0.81rem;
+    background-color: #ffffff;
+    margin: 0 6%;
+    transform: skewY(-3deg);
+}
+
+.fifth-box-btn{
+    display: grid;
+    grid-template-columns: 1fr 20fr 1fr;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.fifth-box-btn span{
+    font-size: 1rem;
+    text-align: left;
+    padding: 3%;
+}
+
+.fifth-box-btn::before{
+    content: "Q.";
+    display: block;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.fifth-box-btn::after{
+    content: "+";
+    color: #481AD3;
+    display: block;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.fifth-box-text{
+    display: none;
+}
+
+.fifth-box-text span{
+    font-size: 1rem;
+    text-align: left;
+    padding: 3%;
+}
+
+.fifth-box-text::before{
+    content: "A.";
+    display: block;
+    color: #d31a1a;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.fifth-box-text.active{
+    display: grid;
+    grid-template-columns: 1fr 21fr;
+    align-items: center;
+}
+
+
+
+
+/*            Company／会社概要            */
+.seventh-section{
+    background-color: #ffffff;
+    padding: 0 0 15% 0;
+    margin: 0 13%;
+}
+
+.seventh-section-title{
+    text-align: left;
+    font-size: 1.81rem;
+    margin: 0 5%;
+    padding: 0;
+}
+
+.seventh-title-underline{
+    padding: 0;
+    margin: 0 5%;
+}
+
+.seventh-title-underline img{
+    max-width: 25rem;
+    width: 100%;
+    height: auto;
+    transform: translate(1%, -50%);
+}
+
+.seventh-contents{
+    margin: 0 4%;
+}
+
+.seventh-box-1{
+    max-width: 11.25rem;
+    width: 100%;
+    height: auto;
+}
+
+.seventh-box-1 img{
+    max-width: 11.25rem;
+    width: 100%;
+    height: auto;
+}
+
+.seventh-box-2{
+    font-size: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2% 2%;
+    padding: 0 2% 12% 2%;
+    margin: 0;
+}
+
+
+
+
+/*          コピーライト          */
+.footer{
+    text-align: center;
+    font-size: 0.81rem;
+    font-weight: bold;
+    background-color: rgb(144, 144, 144);
+    padding: 1% 0;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*　　　　　　　　large-sp-3　　　　　　　　*/
+@media screen and (min-width:600px) and (max-width:768px){
+#about{
+    padding-top: 8%;
+}
+
+#survice{
+    padding-top: 6%;
+}
+
+#achievements{
+    padding-top: 8%;
+}
+
+#FAQ{
+    padding-top: 10%;
+}
+
+#company{
+    padding-top: 10%;
+}
+
+h2{
+    font-size: 1.37rem;
+    text-align: center;
+    padding: 0.5rem;
+    margin: 0 2%;
+}
+
+.logo img{
+    text-align: center;
+    max-width: 70px;
+    width: 100%;
+    height: auto;
+}
+
+.button-list{
+    list-style: none;
+    display: grid;
+    justify-content: center;
+    gap: 10%;
+    align-items: center;
+    padding-top: 5%;
+}
+
+.button-list button{
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    border: none;
+}
+
+.button-list button div{
+    font-family: "Noto Sans JP", serif;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+.hamburger {
+    text-align: center;
+    max-width: 40px;
+    width: 100%;
+    height: auto;
+    display: block;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: rgb(114, 114, 114);
+    font-size: 1.8rem;
+}
+
+.nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    width: 100%;
+    height: 100vh;
+}
+            
+.nav-links.active {
+    display: flex;
+    position: fixed;
+    inset: 0;
+    background-color: #ffffff;
+}
+            
+.nav-links li {
+    margin: 0.5rem 0;
+    margin-left: 0;
+}
+
+/*  CTA  */
+.cta1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -150%);
+    background-color: transparent;
+    border: 0.1rem solid #ffffff;
+    width: 25rem;
+    height: auto;
+    padding: 1rem 0;
+}
+
+.cta1 a{
+    font-size: 1rem;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.cta1 a:visited{
+    color: #ffffff !important;
+}
+
+.cta2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -150%);
+    background-color: transparent;
+    width: 24rem;
+    height: auto;
+    padding: 1rem 0;
+}
+
+.cta2 a{
+    font-size: 1rem;
+    color: #000000;
+    text-decoration: none;
+}
+
+.cta2 a:visited{
+    color: #000000 !important;
+}
+
+
+
+
+
+
+
+/*  トップピクチャー  */
+.top-pic{
+    text-align: center;
+    padding-top: 4.5%;
+}
+
+.top-pic img{
+    max-width: 2000px;
+    width: 100%;
+    max-height: 1000px;
     height: 100%;
 }
 
@@ -758,52 +2618,267 @@
 
 
 
-
-
-/*  BE-mailの特徴  */
-#fourth_add{
-    padding-bottom: 3%;
+/*　　　  感成工業について  　　　*/
+.first-section{
+    background-color: #ffffff;
+    padding: 1% 0 4% 0;
+    margin: 0 15%;
 }
 
-.fourth-main-contents{
-    padding: 3% 2%;
-}
-
-.fourth-main-contents-wrapper{
-    font-size: 1rem;
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-    gap: 2% 2%;
-    padding: 5% 2% 12% 2%;
+.first-section-title{
+    font-size: 1.37rem;
+    text-align: left;
+    padding: 0 0.5rem 1.25rem 0.5rem;
     margin: 0 2%;
-    background-color: rgb(246, 246, 246);
-    border-radius: 0.93rem;
+}
+
+.first-section-text{
+    text-align: left;
+    font-size: 1rem;
+    padding: 1.5%;
+    margin: 2%;
 }
 
 
 
 
-
-
-/*  お問い合わせ  */
-#contact{
-    padding-bottom: 7%;
+/*         Product/製品          */
+.second-section{
+    padding: 3% 0 10% 0;
+    background-image: linear-gradient(to bottom, #481AD3, #C2AEFF);
+    transform: skewY(3deg);
 }
 
-.fifth-main-contents-wrapper{
-    background-color: rgb(246, 246, 246);
-    padding: 2% 5%;
+.second-section-title{
+    color: #ffffff;
+    font-size: 2rem;
+    text-align: left;
+    padding: 1.25rem 0.5rem 0.67rem 0.5rem;
+    margin: 0 13%;
+    transform: skewY(-3deg);
 }
 
-.fifth-main-contents-box{
+
+.second-title-underline{
+    padding: 0 0.5rem;
+    margin: 0 10%;
+    transform: skewY(-3deg);
+}
+
+.second-title-underline img{
+    max-width: 17rem;
+    width: 100%;
+    height: auto;
+    transform: translate(7%, -100%);
+}
+
+
+.second-section-contents{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 5% 0;
+    padding: 1% 2% 0 2%;
+    margin: 5% 11%;
+    transform: skewY(-3deg);
+}
+
+.second-contents-box{
+    padding: 5% 0;
+    background-color: #ffffff;
+}
+
+.second-box-title{
+    color: #000000;
+    font-size: 1.25rem;
+    font-weight: bold;
     text-align: center;
-    padding: 5% 3%;
-    background-color: white;
-    border-radius: 0.62rem;
+    padding-bottom: 0.5rem;
 }
 
-.fifth-main-contents-box-img{
-    max-width: 500px;
+
+.second-box-pic{
+    text-align: center;
+}
+
+.second-box-pic img{
+    max-width: 150px;
+    width: 100%;
+    height: auto;
+    box-shadow:  4px 4px 4px #00000025;
+}
+
+
+.second-box-CVT{
+    text-align: center;
+    padding:1% 0 5% 0;
+}
+
+
+.second-box-CVT button{
+    padding: 2% 20%;
+    background-color: transparent;
+    border: 2px solid #481AD3;
+    cursor: pointer;
+}
+
+
+.second-CVT-btn a{
+    font-weight: bold;
+    color: #481AD3;
+    text-decoration: none;
+}
+
+
+
+
+
+
+/*          Eauipment／設備         */  
+.third-section{
+    padding: 3% 0 10% 0;
+    background-color: #ffffff;
+    transform: skewY(3deg);
+}
+
+.third-section-title{
+    color: #481AD3;
+    font-size: 2rem;
+    text-align:left;
+    padding: 0 0.5rem 0.67rem 0.5rem;
+    margin: 0 13%;
+    transform: skewY(-3deg);
+}
+
+
+.third-title-underline{
+    padding: 0 0.5rem;
+    margin: 0 10%;
+    transform: skewY(-3deg);
+}
+
+.third-title-underline img{
+    max-width: 20rem;
+    width: 100%;
+    height: auto;
+    transform: translate(6%, -100%);
+}
+
+.third-section-text{
+    margin: 0 14%;
+    text-align: left;
+    font-size: 1rem;
+    transform: skewY(-3deg);
+}
+
+
+.third-section-contents{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 5% 0;
+    padding: 1% 2% 0 2%;
+    margin: 5% 11%;
+    transform: skewY(-3deg);
+}
+
+.third-contents-box{
+    padding: 5% 0;
+    background-color: #ffffff;
+}
+
+.third-box-title{
+    color: #000000;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 0.5rem;
+    transform: skewY(-3deg);
+}
+
+
+.third-box-pic{
+    text-align: center;
+    transform: skewY(-3deg);
+}
+
+.third-box-pic img{
+    max-width: 150px;
+    width: 100%;
+    height: auto;
+    box-shadow:  4px 4px 4px #00000025;
+}
+
+
+
+
+/*             Voices／お客様の声              */
+.fourth-section{
+    padding: 3% 0 5% 0;
+    background-color: #FFAF5F;
+    transform: skewY(3deg);
+}
+
+.fourth-section-title{
+    color: #ffffff;
+    font-size: 2rem;
+    text-align: left;
+    padding: 1.25rem 0.5rem 0.67rem 0.5rem;
+    margin: 0 16%;
+    transform: skewY(-3deg);
+}
+
+
+.fourth-title-underline{
+    padding: 0 0.5rem;
+    margin: 0 10%;
+    transform: skewY(-3deg);
+}
+
+.fourth-title-underline img{
+    max-width: 22rem;
+    width: 100%;
+    height: auto;
+    transform: translate(13%, -80%);
+}
+
+.fourth-section-contents-3{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 7% 5%;
+    margin: 0 17% 15% 17%;
+    padding: 7% 5% 18% 5%;
+    transform: skewY(-3deg);
+    background-color: #ffffff;
+    border-radius: 1.5rem 0 0 0;
+}
+
+
+.fourth-box-title{
+    max-width: fit-content;
+    width: 100%;
+    height: auto;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.fourth-box-text{
+    font-size: 1rem;
+    text-align: left;
+    padding-top: 1rem;
+}
+
+.fourth-contents-box-2{
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+.fourth-box-img-2{
+    max-width: 400px;
     width: 100%;
     height: auto;
 }
@@ -811,10 +2886,165 @@
 
 
 
+/*             FAQ／よくある質問            */
+#fourth_add{
+    padding-bottom: 3%;
+}
+
+.fifth-section{
+    background-color: #ffffff;
+    padding: 5% 0 15% 0;
+    margin: 0 13%;
+    transform: skewY(3deg);
+}
+
+
+.fifth-section-title{
+    text-align: left;
+    font-size: 2rem;
+    transform: skewY(-3deg);
+    margin: 0 5%;
+    padding: 0;
+}
+
+
+.fifth-title-underline{
+    padding: 0 0.5rem;
+    margin: 0 10%;
+    transform: skewY(-3deg);
+}
+
+.fifth-title-underline img{
+    max-width: 15rem;
+    width: 100%;
+    height: auto;
+    transform: translate(-11%, -65%);
+}
+
+.fifth-contents{
+    border-radius: 0.81rem;
+    background-color: #ffffff;
+    margin: 0 6%;
+    transform: skewY(-3deg);
+}
+
+.fifth-box-btn{
+    display: grid;
+    grid-template-columns: 1fr 18fr 1fr;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.fifth-box-btn span{
+    font-size: 1rem;
+    text-align: left;
+    padding: 3%;
+}
+
+.fifth-box-btn::before{
+    content: "Q.";
+    display: block;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.fifth-box-btn::after{
+    content: "+";
+    color: #481AD3;
+    display: block;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.fifth-box-text{
+    display: none;
+}
+
+.fifth-box-text span{
+    font-size: 1rem;
+    text-align: left;
+    padding: 3%;
+}
+
+.fifth-box-text::before{
+    content: "A.";
+    display: block;
+    color: #d31a1a;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.fifth-box-text.active{
+    display: grid;
+    grid-template-columns: 1fr 19fr;
+    align-items: center;
+}
 
 
 
-/*  会社情報とコピーライト  */
+
+
+
+
+
+/*            Company／会社概要            */
+.seventh-section{
+    background-color: #ffffff;
+    padding: 0 0 15% 0;
+    margin: 0 13%;
+}
+
+.seventh-section-title{
+    text-align: left;
+    font-size: 2rem;
+    margin: 0 5%;
+    padding: 0;
+}
+
+.seventh-title-underline{
+    padding: 0 0.5rem;
+    margin: 0 5%;
+}
+
+.seventh-title-underline img{
+    max-width: 35rem;
+    width: 100%;
+    height: auto;
+    transform: translate(-1%, -60%);
+}
+
+.seventh-contents{
+    margin: 0 4%;
+}
+
+.seventh-box-1{
+    max-width: 11.25rem;
+    width: 100%;
+    height: auto;
+}
+
+.seventh-box-1 img{
+    max-width: 11.25rem;
+    width: 100%;
+    height: auto;
+}
+
+.seventh-box-2{
+    font-size: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2% 2%;
+    padding: 0 2% 12% 2%;
+    margin: 0;
+}
+
+
+
+
+/*          コピーライト          */
 .footer{
     text-align: center;
     font-size: 0.81rem;
@@ -824,6 +3054,19 @@
 }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*　　　　　　　　　　tablet　　　　　　　　　　*/
@@ -832,28 +3075,44 @@
     padding-top: 8%;
 }
 
-#sales{
+#survice{
     padding-top: 6%;
 }
 
-#reform{
-    padding-top: 5%;
-}
-
-#company{
+#achievements{
     padding-top: 8%;
 }
 
-#contact{
-    padding-top: 2%;
+#FAQ{
+    padding-top: 10%;
+}
+
+#company{
+    padding-top: 9%;
+}
+
+
+h2{
+    font-size: 1.87rem;
+    text-align: center;
+    padding: 0.5rem;
+    margin: 0 2%;
+}
+
+.logo img{
+    text-align: center;
+    max-width: 80px;
+    width: 100%;
+    height: auto;
 }
     
 .button-list{
     list-style: none;
-    display: flex;
-    justify-content: end;
-    gap: 3%;
+    display: grid;
+    justify-content: center;
+    gap: 5%;
     align-items: center;
+    padding-top: 9%;
 }
 
 .button-list button{
@@ -866,24 +3125,96 @@
     font-family: "Noto Sans JP", serif;
     font-weight: 500;
     color: rgb(0, 0, 0);
-    font-size: 1rem;
+    font-size: 1.6rem;
     text-decoration: none;
 }
 
-.main-contents-title{
-    text-align: left;
-    font-size: 250%;
-    font-weight: bold;
-    padding: 2%;
-    margin: 0 1.3%;
+.hamburger {
+    text-align: center;
+    max-width: 40px;
+    width: 100%;
+    height: auto;
+    display: block;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: rgb(114, 114, 114);
+    font-size: 3rem;
 }
 
-.main-contents-title-explanation{
-    font-size: 1.25rem;
-    text-align: left;
-    padding: 0.5rem;
-    margin: 0 2%;
+.nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    width: 100%;
+    height: 100vh;
 }
+            
+.nav-links.active {
+    display: flex;
+    position: fixed;
+    inset: 0;
+    background-color: #ffffff;
+}
+            
+.nav-links li {
+    margin: 0.5rem 0;
+    margin-left: 0;
+}
+
+
+
+
+/*  CTA  */
+.cta1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -140%);
+    background-color: transparent;
+    border: 0.1rem solid #ffffff;
+    width: 33rem;
+    height: auto;
+    padding: 1.3rem 0;
+}
+
+.cta1 a{
+    font-size: 1.3rem;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.cta1 a:visited{
+    color: #ffffff !important;
+}
+
+.cta2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -150%);
+    background-color: transparent;
+    width: 30rem;
+    height: auto;
+    padding: 1.3rem 0;
+}
+
+.cta2 a{
+    font-size: 1.3rem;
+    color: #000000;
+    text-decoration: none;
+}
+
+.cta2 a:visited{
+    color: #000000 !important;
+}
+
+
+
 
 
 
@@ -891,7 +3222,7 @@
 /*  トップピクチャー  */
 .top-pic{
     text-align: center;
-    padding-top: 7%;
+    padding-top: 5.7%;
 }
 
 .top-pic img{
@@ -907,190 +3238,430 @@
 
 
 
-/*　　　導入文　　　*/
-.first-main-contents{
-    background-color: rgb(246, 246, 246);
+/*　　　  感成工業について  　　　*/
+.first-section{
+    background-color: #ffffff;
     padding: 1% 0 3% 0;
+    margin: 0 15%;
 }
 
-.first-main-contents-wrapper{
+.first-section-title{
+    font-size: 1.87rem;
+    text-align: left;
+    padding: 0 0.5rem 1.25rem 0.5rem;
+    margin: 0 2%;
+}
+
+.first-section-text{
+    text-align: left;
+    font-size: 1.25rem;
+    padding: 2%;
+    margin: 2% 1%;
+    border-radius: 1rem;
+}
+
+
+
+
+
+/*         Product/製品          */
+.second-section{
+    padding: 3% 0 10% 0;
+    background-image: linear-gradient(to bottom, #481AD3, #C2AEFF);
+    transform: skewY(3deg);
+}
+
+.second-section-title{
+    color: #ffffff;
+    font-size: 3rem;
+    text-align: left;
+    padding: 1.25rem 0.5rem 0.67rem 0.5rem;
+    margin: 0 16%;
+    transform: skewY(-3deg);
+}
+
+
+.second-title-underline{
+    padding: 0 0.5rem;
+    margin: 0 10%;
+    transform: skewY(-3deg);
+}
+
+.second-title-underline img{
+    max-width: 25rem;
+    width: 100%;
+    height: auto;
+    transform: translate(12%, -80%);
+}
+
+
+.second-section-contents{
     display: grid;
     justify-content: center;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 2%;
-    padding-top: 2%;
+    grid-template-columns: 1fr 1fr;
+    gap:  2% 3%;
+    padding: 2% 3% 0 3%;
+    margin: 3% 13%;
+    transform: skewY(-3deg);
 }
 
-.first-main-contents-list{
-    font-size: 120%;
-    font-weight: bold;
-}
-
-.first-main-contents-img{
-    max-width: 350px;
-    width: 100%;
-    max-height: auto;
-    height: 100%;
-}
-
-
-
-
-
-
-
-/*  セールストーク  */
-.second-main-contents{
-    padding: 3% 0;
-}
-
-.second-main-contents-wrapper{
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: 2fr 1.65fr;
-}
-
-.second-main-contents-boxL{
+.second-contents-box{
     padding: 5% 0;
+    background-color: #ffffff;
 }
 
-.second-main-contents-explanationT{
+.second-box-title{
+    color: #000000;
     font-size: 1.87rem;
     font-weight: bold;
-}
-
-.second-main-contents-explanationB{
-    font-size: 1.25rem;
-    text-align: left;
-    padding-top: 0.7rem;
-}
-
-.second-main-contents-boxR{
     text-align: center;
-    max-width: 250px;
+    padding-bottom: 1rem;
+}
+
+
+.second-box-pic{
+    text-align: center;
+}
+
+.second-box-pic img{
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+    box-shadow:  4px 4px 4px #00000025;
+}
+
+
+.second-box-CVT{
+    text-align: center;
+    padding:1% 0 5% 0;
+}
+
+
+.second-box-CVT button{
+    padding: 2% 20%;
+    background-color: transparent;
+    border: 3px solid #481AD3;
+    cursor: pointer;
+}
+
+
+.second-CVT-btn a{
+    font-weight: bold;
+    color: #481AD3;
+    text-decoration: none;
+}
+
+
+
+
+/*          Eauipment／設備         */  
+.third-section{
+    padding: 0 0 10% 0;
+    background-color: #ffffff;
+    transform: skewY(3deg);
+}
+
+.third-section-title{
+    color: #481AD3;
+    font-size: 3rem;
+    text-align: left;
+    padding: 0 0.5rem 0.67rem 0.5rem;
+    margin: 0 16%;
+    transform: skewY(-3deg);
+}
+
+
+.third-title-underline{
+    padding: 0 0.5rem;
+    margin: 0 10%;
+    transform: skewY(-3deg);
+}
+
+.third-title-underline img{
+    max-width: 30rem;
+    width: 100%;
+    height: auto;
+    transform: translate(9%, -80%);
+}
+
+.third-section-text{
+    margin: 0 16%;
+    text-align: left;
+    font-size: 1.25rem;
+    transform: skewY(-3deg);
+}
+
+
+.third-section-contents{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    gap:  2% 3%;
+    padding: 2% 3% 0 3%;
+    margin: 3% 13%;
+    transform: skewY(-3deg);
+}
+
+.third-contents-box{
+    padding: 5% 0;
+    background-color: #ffffff;
+}
+
+.third-box-title{
+    color: #000000;
+    font-size: 1.87rem;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 1rem;
+    transform: skewY(-3deg);
+}
+
+
+.third-box-pic{
+    text-align: center;
+    transform: skewY(-3deg);
+}
+
+.third-box-pic img{
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+    box-shadow:  4px 4px 4px #00000025;
+}
+
+
+
+
+
+/*             Voices／お客様の声              */
+.fourth-section{
+    padding: 3% 0 5% 0;
+    background-color: #FFAF5F;
+    transform: skewY(3deg);
+}
+
+.fourth-section-title{
+    color: #ffffff;
+    font-size: 3rem;
+    text-align: left;
+    padding: 1.25rem 0.5rem 0.67rem 0.5rem;
+    margin: 0 16%;
+    transform: skewY(-3deg);
+}
+
+
+.fourth-title-underline{
+    padding: 0 0.5rem;
+    margin: 0 10%;
+    transform: skewY(-3deg);
+}
+
+.fourth-title-underline img{
+    max-width: 38rem;
+    width: 100%;
+    height: auto;
+    transform: translate(11%, -80%);
+}
+
+.fourth-section-contents-3{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 7% 5%;
+    margin: 0 17% 15% 17%;
+    padding: 7% 5% 15% 5%;
+    transform: skewY(-3deg);
+    background-color: #ffffff;
+    border-radius: 1.5rem 0 0 0;
+}
+
+
+.fourth-box-title{
+    max-width: fit-content;
+    width: 100%;
+    height: auto;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.fourth-box-text{
+    font-size: 1.35rem;
+    text-align: left;
+    padding-top: 1rem;
+}
+
+.fourth-contents-box-2{
+    text-align: center;
+    max-width: 400px;
     width: 100%;
     height: auto;
     margin: auto;
 }
 
-.second-main-contents-img{
-    max-width: 250px;
+.fourth-box-img-2{
+    max-width: 400px;
     width: 100%;
     height: auto;
 }
 
 
 
-
-
-
-
-
-/*  解決策の例示  */
-.third-main-contents{
-    background-color: rgb(246, 246, 246);
-    padding: 40px 0;
-    text-align: center;
-}
-
-.third-main-contents-wrapper{
-    display: grid;
-    justify-content: center;
-    grid-template-columns: repeat(auto-fit,300px);
-    gap: 1.25rem;
-    padding-top: 7%;
-    margin: 0 5%;
-}
-
-.third-main-contents-wrapper-title{
-    max-width: 300px;
-    width: auto;
-    height: auto;
-    font-size: 1.55rem;
-    font-weight: bold;
-}
-
-.third-main-contents-wrapper-img{
-    max-width: 300px;
-    width: auto;
-    height: auto;
-}
-
-.main-contents-img{
-    margin: 0 10%;
-    padding: 2% 0;
-    max-width: 60%;
-    width: 100%;
-    max-height: auto;
-    height: 100%;
-}
-
-
-
-
-
-
-
-
-
-
-
-/*  BE-mailの特徴  */
+/*             FAQ／よくある質問            */
 #fourth_add{
     padding-bottom: 8%;
 }
 
-.fourth-main-contents{
-    padding: 0 3% 3% 3%;
+.fifth-section{
+    background-color: #ffffff;
+    padding: 5% 0 15% 0;
+    margin: 0 13%;
+    transform: skewY(3deg);
 }
 
-.fourth-main-contents-wrapper{
-    font-size: 1.25rem;
+.fifth-section-title{
+    text-align: left;
+    font-size: 3rem;
+    transform: skewY(-3deg);
+    margin: 0 6%;
+    padding: 0;
+}
+
+
+.fifth-title-underline{
+    padding: 0 0.5rem;
+    margin: 0 10%;
+    transform: skewY(-3deg);
+}
+
+.fifth-title-underline img{
+    max-width: 23rem;
+    width: 100%;
+    height: auto;
+    transform: translate(-7%, -60%);
+}
+
+
+.fifth-contents{
+    border-radius: 0.81rem;
+    background-color: #ffffff;
+    margin: 0 7%;
+    transform: skewY(-3deg);
+}
+
+.fifth-box-btn{
     display: grid;
-    grid-template-columns: 1fr 4fr;
-    gap: 5% 2%;
-    padding: 2% 2% 9% 2%;
-    margin: 0 2%;
-    background-color: rgb(246, 246, 246);
-    border-radius: 0.93rem;
+    grid-template-columns: 1fr 15fr 1fr;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
 }
 
-
-
-
-
-
-
-/*  お問い合わせ  */
-#contact{
-    padding-bottom: 5%;
+.fifth-box-btn span{
+    font-size: 1.75rem;
+    text-align: left;
+    padding: 3%;
 }
 
-.fifth-main-contents-wrapper{
-    background-color: rgb(246, 246, 246);
-    padding: 2% 5%;
-}
-
-.fifth-main-contents-box{
+.fifth-box-btn::before{
+    content: "Q.";
+    display: block;
+    font-size: 2rem;
     text-align: center;
-    padding: 5% 3%;
-    background-color: white;
-    border-radius: 0.62rem;
 }
 
-.fifth-main-contents-box-img{
-    max-width: 500px;
+.fifth-box-btn::after{
+    content: "+";
+    color: #481AD3;
+    display: block;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.fifth-box-text{
+    display: none;
+}
+
+.fifth-box-text span{
+    font-size: 1.75rem;
+    text-align: left;
+    padding: 3%;
+}
+
+.fifth-box-text::before{
+    content: "A.";
+    display: block;
+    color: #d31a1a;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.fifth-box-text.active{
+    display: grid;
+    grid-template-columns: 1fr 16fr;
+    align-items: center;
+}
+
+
+
+
+
+/*            Company／会社概要            */
+.seventh-section{
+    background-color: #ffffff;
+    padding: 0 0 15% 0;
+    margin: 0 14%;
+}
+
+.seventh-section-title{
+    text-align: left;
+    font-size: 2.5rem;
+    margin: 0 5%;
+    padding: 0;
+}
+
+.seventh-title-underline{
+    padding: 0 0.5rem;
+    margin: 0 5%;
+}
+
+.seventh-title-underline img{
+    max-width: 30rem;
+    width: 100%;
+    height: auto;
+    transform: translate(-1%, -50%);
+}
+
+.seventh-contents{
+    margin: 0 4%;
+}
+
+.seventh-box-1{
+    max-width: 11.25rem;
     width: 100%;
     height: auto;
 }
 
+.seventh-box-1 img{
+    max-width: 11.25rem;
+    width: 100%;
+    height: auto;
+}
+
+.seventh-box-2{
+    font-size: 1.35rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2% 2%;
+    padding: 0 2% 12% 2%;
+    margin: 0;
+}
 
 
 
 
-
-
-/*  会社情報とコピーライト  */
+/*          コピーライト          */
 .footer{
     text-align: center;
     font-size: 1rem;
@@ -1100,6 +3671,19 @@
 }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1114,28 +3698,44 @@
     padding-top: 8%;
 }
 
-#sales{
+#survice{
     padding-top: 7%;
 }
 
-#reform{
-    padding-top: 7%;
+#achievements{
+    padding-top: 10%;
+}
+
+#FAQ{
+    padding-top: 8%;
 }
 
 #company{
     padding-top: 8%;
 }
 
-#contact{
-    padding-top: 2%;
+
+h2{
+    font-size: 2.25rem;
+    text-align: center;
+    padding: 0.5rem;
+    margin: 0 2%;
+}
+
+.logo img{
+    text-align: center;
+    max-width: 80px;
+    width: 100%;
+    height: auto;
 }
 
 .button-list{
     list-style: none;
-    display: flex;
-    justify-content: end;
-    gap: 3%;
+    display: grid;
+    justify-content: center;
+    gap: 5%;
     align-items: center;
+    padding-top: 9%;
 }
 
 .button-list button{
@@ -1148,30 +3748,101 @@
     font-family: "Noto Sans JP", serif;
     font-weight: 500;
     color: rgb(0, 0, 0);
-    font-size: 1.2rem;
+    font-size: 2.5rem;
     text-decoration: none;
 }
 
-.main-contents-title{
-    text-align: left;
-    font-size: 280%;
-    font-weight: bold;
-    padding: 2%;
-    margin: 0 1%;
+.hamburger {
+    text-align: center;
+    max-width: 40px;
+    width: 100%;
+    height: auto;
+    display: block;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: rgb(114, 114, 114);
+    font-size: 3rem;
 }
 
-.main-contents-title-explanation{
-    font-size: 1.5rem;
-    text-align: left;
-    padding: 0.5rem;
-    margin: 0 2%;
+.nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    width: 100%;
+    height: 100vh;
 }
+            
+.nav-links.active {
+    display: flex;
+    position: fixed;
+    inset: 0;
+    background-color: #ffffff;
+}
+            
+.nav-links li {
+    margin: 0.5rem 0;
+    margin-left: 0;
+}
+
+/*  CTA  */
+.cta1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -140%);
+    background-color: transparent;
+    border: 0.3rem solid #ffffff;
+    width: 60rem;
+    height: auto;
+    padding: 2rem 0;
+}
+
+.cta1 a{
+    font-size: 2.5rem;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.cta1 a:visited{
+    color: #ffffff !important;
+}
+
+.cta2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -150%);
+    background-color: transparent;
+    width: 55rem;
+    border: 0.3rem solid #000000;
+    height: auto;
+    padding: 2rem 0;
+}
+
+.cta2 a{
+    font-size: 2.5rem;
+    color: #000000;
+    text-decoration: none;
+}
+
+.cta2 a:visited{
+    color: #000000 !important;
+}
+
+
+
+
 
 
 /*  トップピクチャー  */
 .top-pic{
     text-align: center;
-    padding-top: 7%;
+    padding-top: 3.7%;
 }
 
 .top-pic img{
@@ -1187,66 +3858,268 @@
 
 
 
-/*　　　導入文　　　*/
-.first-main-contents{
-    background-color: rgb(246, 246, 246);
+/*　　　  感成工業について  　　　*/
+.first-section{
+    background-color: #ffffff;
     padding: 2% 0 3% 0;
+    margin: 0 15%;
 }
 
-.first-main-contents-wrapper{
+.first-section-title{
+    font-size: 3rem;
+    text-align: left;
+    padding: 0 1rem 2.25rem 1rem;
+    margin: 0 2%;
+}
+
+.first-section-text{
+    text-align: left;
+    font-size: 1.87rem;
+    padding: 2%;
+    margin: 3% 1%;
+    border-radius: 1.25rem;
+}
+
+
+
+
+
+
+/*         Product/製品          */
+.second-section{
+    padding: 3% 0 10% 0;
+    background-image: linear-gradient(to bottom, #481AD3, #C2AEFF);
+    transform: skewY(3deg);
+}
+
+.second-section-title{
+    color: #ffffff;
+    font-size: 5rem;
+    text-align: left;
+    padding: 1.25rem 0.5rem 0.67rem 0.5rem;
+    margin: 0 16%;
+    transform: skewY(-3deg);
+}
+
+
+.second-title-underline{
+    padding: 0 0.5rem;
+    margin: 0 10%;
+    transform: skewY(-3deg);
+}
+
+.second-title-underline img{
+    max-width: 43rem;
+    width: 100%;
+    height: auto;
+    transform: translate(12%, -60%);
+}
+
+
+.second-section-contents{
     display: grid;
     justify-content: center;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 2%;
-    padding-top: 2%;
+    grid-template-columns: 1fr  1fr;
+    gap: 2% 3%;
+    padding: 2% 3% 0 3%;
+    margin: 2% 13%;
+    transform: skewY(-3deg);
 }
 
-
-.first-main-contents-list{
-    font-size: 150%;
-    font-weight: bold;
-}
-
-.first-main-contents-img{
-    max-width: 350px;
-    width: 100%;
-    max-height: auto;
-    height: 100%;
-}
-
-
-
-
-
-
-
-/*  セールストーク  */
-.second-main-contents{
-    padding: 3% 0;
-}
-
-.second-main-contents-wrapper{
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: 2fr 1.75fr;
-}
-
-.second-main-contents-boxL{
+.second-contents-box{
     padding: 5% 0;
+    background-color: #ffffff;
 }
 
-.second-main-contents-explanationT{
+.second-box-title{
+    color: #000000;
     font-size: 2.5rem;
     font-weight: bold;
+    text-align: center;
+    padding-bottom: 1.25rem;
 }
 
-.second-main-contents-explanationB{
-    font-size: 1.5rem;
+
+.second-box-pic{
+    text-align: center;
+}
+
+.second-box-pic img{
+    text-align: center;
+    max-width: 380px;
+    width: 100%;
+    height: auto;
+    box-shadow:  4px 4px 4px #00000025;
+}
+
+
+.second-box-CVT{
+    text-align: center;
+    padding:1% 0 5% 0;
+}
+
+
+.second-box-CVT button{
+    padding: 2% 34%;
+    background-color: transparent;
+    border: 3px solid #481AD3;
+    cursor: pointer;
+}
+
+.second-CVT-btn a{
+    font-weight: bold;
+    color: #481AD3;
+    text-decoration: none;
+}
+
+.second-CVT-btn a:visited{
+        color: #481AD3;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+/*          Eauipment／設備         */  
+.third-section{
+    padding: 0 0 10% 0;
+    background-color: #ffffff;
+    transform: skewY(3deg);
+}
+
+.third-section-title{
+    color: #481AD3;
+    font-size: 5rem;
     text-align: left;
-    padding-top: 0.8rem;
+    padding: 0 0.5rem 0.67rem 0.5rem;
+    margin: 0 16%;
+    transform: skewY(-3deg);
 }
 
-.second-main-contents-boxR{
+
+.third-title-underline{
+    padding: 0 0.5rem;
+    margin: 0 10%;
+    transform: skewY(-3deg);
+}
+
+.third-title-underline img{
+    max-width: 50rem;
+    width: 100%;
+    height: auto;
+    transform: translate(11%, -70%);
+}
+
+
+.third-section-text{
+    margin: 0 17%;
+    text-align: left;
+    font-size: 1.87rem;
+    transform: skewY(-3deg);
+}
+
+
+.third-section-contents{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr  1fr;
+    gap: 2% 3%;
+    padding: 2% 3% 0 3%;
+    margin: 2% 13%;
+    transform: skewY(-3deg);
+}
+
+.third-contents-box{
+    padding: 5% 0;
+    background-color: #ffffff;
+}
+
+.third-box-title{
+    color: #000000;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 1.25rem;
+    transform: skewY(-3deg);
+}
+
+
+.third-box-pic{
+    text-align: center;
+    transform: skewY(-3deg);
+}
+
+.third-box-pic img{
+    text-align: center;
+    max-width: 430px;
+    width: 100%;
+    height: auto;
+    box-shadow:  8px 8px 8px #00000025;
+}
+
+
+
+/*             Voices／お客様の声              */
+.fourth-section{
+    padding: 3% 0 1% 0;
+    background-color: #FFAF5F;
+    transform: skewY(3deg);
+}
+
+.fourth-section-title{
+    color: #ffffff;
+    font-size: 5rem;
+    text-align: left;
+    padding: 5rem 0.5rem 0.67rem 0.5rem;
+    margin: 0 16%;
+    transform: skewY(-3deg);
+}
+
+
+.fourth-title-underline{
+    padding: 0 0.5rem;
+    margin: 0 10%;
+    transform: skewY(-3deg);
+}
+
+.fourth-title-underline img{
+    max-width: 55rem;
+    width: 100%;
+    height: auto;
+    transform: translate(10%, -80%);
+}
+
+.fourth-section-contents-3{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 10% 5%;
+    margin: 0 17% 15% 17%;
+    padding: 5% 5% 12% 5%;
+    transform: skewY(-3deg);
+    background-color: #ffffff;
+    border-radius: 2rem 0 0 0;
+}
+
+
+.fourth-box-title{
+    max-width: fit-content;
+    width: 100%;
+    height: auto;
+    font-size: 2.25rem;
+    font-weight: bold;
+}
+
+.fourth-box-text{
+    font-size: 1.87rem;
+    text-align: left;
+    padding-top: 1rem;
+}
+
+.fourth-contents-box-2{
     text-align: center;
     max-width: 400px;
     width: 100%;
@@ -1254,126 +4127,165 @@
     margin: auto;
 }
 
-.second-main-contents-img{
+.fourth-box-img-2{
     max-width: 400px;
     width: 100%;
     height: auto;
+    box-shadow:  4px 4px 15px#ffffff;
 }
 
 
 
 
 
-
-
-
-
-
-
-/*  解決策の例示  */
-.third-main-contents{
-    background-color: rgb(246, 246, 246);
-    padding: 40px 0;
-    text-align: center;
-}
-
-.third-main-contents-wrapper{
-    display: grid;
-    justify-content: center;
-    grid-template-columns: repeat(auto-fit,300px);
-    gap: 1.25rem;
-    padding-top: 7%;
-    margin: 0 5%;
-}
-
-.third-main-contents-wrapper-title{
-    max-width: 300px;
-    width: auto;
-    height: auto;
-    font-size: 1.55rem;
-    font-weight: bold;
-}
-
-.third-main-contents-wrapper-img{
-    max-width: 300px;
-    width: auto;
-    height: auto;
-}
-
-.main-contents-img{
-    margin: 0 10%;
-    padding: 2% 0;
-    max-width: 60%;
-    width: 100%;
-    max-height: auto;
-    height: 100%;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-/*  BE-mailの特徴  */
+/*             FAQ／よくある質問            */
 #fourth_add{
     padding-bottom: 8%;
 }
 
-.fourth-main-contents{
-    padding: 0 3% 3% 3%;
+.fifth-section{
+    background-color: #ffffff;
+    padding: 5% 0 15% 0;
+    margin: 0 18%;
+    transform: skewY(3deg);
 }
 
-.fourth-main-contents-wrapper{
-    font-size: 1.5rem;
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-    gap: 5% 2%;
-    padding: 2% 2% 7.5% 2%;
-    margin: 0 2%;
-    background-color: rgb(246, 246, 246);
-    border-radius: 0.93rem;
+.fifth-section-title{
+    text-align: left;
+    font-size: 5rem;
+    transform: skewY(-3deg);
+    margin: 0;
+    padding: 0;
 }
 
 
-
-
-
-
-
-/*  お問い合わせ  */
-#contact{
-    padding-bottom: 5%;
+.fifth-title-underline{
+    padding: 0 0.5rem;
+    margin: 0 10%;
+    transform: skewY(-3deg);
 }
 
-.fifth-main-contents-wrapper{
-    background-color: rgb(246, 246, 246);
-    padding: 2% 5%;
-}
-
-.fifth-main-contents-box{
-    text-align: center;
-    padding: 5% 3%;
-    background-color: white;
-    border-radius: 0.62rem;
-}
-
-.fifth-main-contents-box-img{
-    max-width: 700px;
+.fifth-title-underline img{
+    max-width: 40rem;
     width: 100%;
     height: auto;
+    transform: translate(-16%, -60%);
+}
 
+
+.fifth-contents{
+    transform: skewY(-3deg);
+}
+
+.fifth-box-btn{
+    display: grid;
+    grid-template-columns: 1fr 15fr 1fr;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.fifth-box-btn span{
+    font-size: 2.5rem;
+    text-align: left;
+    padding: 3%;
+}
+
+.fifth-box-btn::before{
+    content: "Q.";
+    display: block;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.fifth-box-btn::after{
+    content: "+";
+    color: #481AD3;
+    display: block;
+    font-size: 6rem;
+    text-align: center;
+}
+
+.fifth-box-text{
+    display: none;
+}
+
+.fifth-box-text span{
+    font-size: 2.5rem;
+    text-align: left;
+    padding: 3%;
+}
+
+.fifth-box-text::before{
+    content: "A.";
+    display: block;
+    color: #d31a1a;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.fifth-box-text.active{
+    display: grid;
+    grid-template-columns: 1fr 16fr;
+    align-items: center;
 }
 
 
 
 
-/*  会社情報とコピーライト  */
+/*            Company／会社概要            */
+.seventh-section{
+    background-color: #ffffff;
+    padding: 0 0 15% 0;
+    margin: 0 18%;
+}
+
+.seventh-section-title{
+    text-align: left;
+    font-size: 5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.seventh-title-underline{
+    padding: 0;
+    margin: 0 1%;
+}
+
+.seventh-title-underline img{
+    max-width: 70rem;
+    width: 100%;
+    height: auto;
+    transform: translate(0, -50%);
+}
+
+.seventh-box-1{
+    max-width: 25rem;
+    width: 100%;
+    height: auto;
+}
+
+.seventh-box-1 img{
+    max-width: 25rem;
+    width: 100%;
+    height: auto;
+}
+
+.seventh-box-2{
+    font-size: 1.87rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2% 2%;
+    padding: 0 2% 12% 2%;
+    margin: 0;
+}
+
+
+
+
+/*          コピーライト          */
 .footer{
     text-align: center;
     font-size: 1rem;

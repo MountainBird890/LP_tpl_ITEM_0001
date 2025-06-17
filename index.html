@@ -1,14 +1,12 @@
 <!doctype html>
 <html lang="ja">
   <head>
-<!-- Google Anarytics -->
-<script async src="https://www.googletagmanager.com/"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="これは令イ成書房のポートフォリオLPです。実在する団体や個人などいかなるものと一切関係ございませんので、あらかじめご留意いただけますと幸いです。
-このLPは日本のハウスメーカーの紹介を目的に設計しております。地域に寄り添う姿勢を文章で主張し、シンプルなレイアウトで誠実さを表現しました。
+このLPは架空の県の不動産会社の紹介を目的に設計しております。幅広いサービスを真摯にご提供するという旨を文章に盛り込み、信頼性を高めています。
 ">
-    <title>このようなLPを最短翌日ご提供いたします</title>
+    <title>このようなLPを最短翌々日ご提供いたします</title>
     <!--　CSS　-->
     <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" href="./common.css">
@@ -19,173 +17,238 @@
   </head>
   <body>
 <!--  グローバルナビゲーション  -->
-  <section class="glo-nav">
+  <div class="lp-wrap">
+   <section class="glo-nav">
         <nav class="glo-nav-wrapper">
-            <ul style="text-align: center;">
-                <button class="logo" data-target="top-view"><img src="./images/企業ロゴ_LP_tpl_CI_0001.png" alt="株式会社感情土木建設"></button>
-            </ul>
-            <ul class="button-list">
-                <button data-target="about"><div>感建について</div></button>
-                <button data-target="sales"><div>新築・中古住宅</div></button>
-                <button data-target="reform"><div>リフォーム</div></button>
+            <button class="logo" data-target="top-view"><img src="./images/company-logo.webp" alt="株式会社感成工業"></button>
+            <button class="hamburger" id="hamburger" aria-label="メニューを開く">
+              <div>≡</div>
+            </button>
+            <div class="nav-links" id="navLinks">
+             <ul class="button-list">
+                <button data-target="about"><div>感成について</div></button>
+                <button data-target="survice"><div>サービス</div></button>
+                <button data-target="achievements"><div>実績・お客様の声</div></button>
+                <button data-target="FAQ"><div>よくある質問</div></button>
                 <button data-target="company"><div>会社概要</div></button>
-                <button data-target="contact"><div>お問い合わせ</div></button>
-            </ul>
+                <button data-target="hamburger"><div>↼戻る</div></button>
+             </ul>
+          </div>
         </nav>
-  </section>
+   </section>
+  </div>
 <!--  トップビュー  -->
-  <div id="top-view"></div>
-  <h1 class="top-pic"><img src="./images/pexels-binyaminmellish-106399.png" alt="感情があるお家づくり"></h1>
-<!--  感建について  -->
-  <section class="first-main-contents">
-    <div id="about">
-      <h2>感建について</h2>
-      <p style="text-align: left;" class="main-contents-title">感情が広がるお家をお届けする</p>
-      <p class="main-contents-title-explanation">
-        感建がつくるのはモノではなく、お住まいになる方の幸せや期待という感情です。“お家づくりは人生づくり”という言葉を胸に抱き、施工はもちろん、その後のアフターサポートまでお手伝いさせていただきます。1年後も10年後もその先もずっと、温かみのある感情が満ちるお家をお支えいたします。
-      </p>
-    </div>
-    <div style="padding: 0.5rem; margin: 0 2%;" class="first-main-contents-wrapper">
-        <div class="first-main-contents-list">
-          <div><img src="./images/pexels-pixabay-279607.jpg" class="first-main-contents-img" alt="暖かい光が広がる空間"></div>
-        </div>
-        <div class="first-main-contents-list">
-          <div><img src="./images/pexels-fotoaibe-1571453.jpg" class="first-main-contents-img" alt="生活感が奏でるリビングルーム"></div>
-        </div>
-        <div class="first-main-contents-list">
-          <div><img src="./images/笑顔　家族　リビング.jpg" class="first-main-contents-img" alt="住む人の笑顔溢れるお家づくり"></div>
-        </div>
-        <div class="first-main-contents-list">
-          <div><img src="./images/pexels-pixabay-164446.jpg" class="first-main-contents-img" alt="思わず零れる心地よさ"></div>
-        </div>
-     </div>
+  <h1 class="top-pic" id="top-view"><img src="./images/first-section.webp" alt="精密なねじが未来を創る"></h1>
+  <div style="position: relative;">
+    <!--hrefのURLはランサーズの令イ成書房プロフィールリンクです-->
+    <button class="cta1"><a href="https://www.lancers.jp/profile/yoinasyobo">今すぐ見積り依頼</a></button>
+  </div>
+<!--  感成工業について  -->
+  <section class="first-section" id="about">
+    <h2 class="first-section-title">
+      <span style="font-size: 150%;">高精度×耐久性</span><br>
+      ──選ばれる理由があります
+    </h2>
+    <p class="first-section-text">
+      弊社のねじは使いやすく、高品質。高い寸法精度で、豊富な規格に対応することができます。また、チタン・ステンレスなど多材質に対応しているため、様々な業界で使われています。
+    </p>
   </section>
-<!--  新築・中古住宅  -->
-  <div id="sales"></div>
-  <section class="second-main-contents">
-    <div>
-      <h2>新築・中古住宅</h2>
-      <div style="text-align: center;">
-        <img class="main-contents-img" src="./images/pexels-pixabay-534220.jpg" alt="新築、中古共にご用意いたします">
+<!--  Product/製品  -->
+  <section class="second-section"  id="survice">
+    <h2 class="second-section-title">
+      Product／製品<br>
+    </h2>
+    <p class="second-title-underline"><img src="./images/section-title-underline-white.webp" alt="タイトルアンダーライン"></p>
+    <div class="second-section-contents">
+      <div class="second-contents-box">
+        <p class="second-box-title">ラッパねじ</p>
+        <p class="second-box-pic">
+          <img src="./images/pexels-steve-936594.webp" alt="ラッパねじ">
+        </p>
+        <div class="second-box-CVT">
+          <button class="second-CVT-btn"><a href="https://www.lancers.jp/profile/yoinasyobo">注文する</a></button>
+        </div>
       </div>
-      <p style="text-align: left;" class="main-contents-title">理想の住まいが現実になる</p>
-      <p class="main-contents-title-explanation">
-        感建では施工からアフターフォローまで、徹底したサービスをご提供する事でお施主様の理想を実現。想いに応える住まいづくりをお約束いたします。<br>
-        また、弊社では中古住宅販売にも力を入れています。初めての住宅購入でも安心できるようにお支えいたしますのでお気軽にご相談ください。
-      </p>
-    </div> 
-    <div style="margin: 3% 7%;" class="second-main-contents-wrapper">
-       <div class="second-main-contents-boxL">
-        <p class="second-main-contents-explanationT">
-            施工実績<span style="font-size: 200%; color: rgb(255, 61, 100);">100</span><span style="color: rgb(255, 61, 100);">件</span>以上
+      <div class="second-contents-box">
+        <p class="second-box-title">六角ボルト</p>
+        <p class="second-box-pic">
+          <img src="./images/pexels-pixabay-259988.webp" alt="六角ボルト">
         </p>
-        <p class="second-main-contents-explanationB">
-            創業から30年積み上げてきた実力と知識で<span style="font-size: 135%; font-weight: 500;">“好きが詰まった”</span>お家を造ります。
-        </p>
-       </div>
-       <div class="second-main-contents-boxR">
-        <img class="second-main-contents-img" src="./images/pexels-expect-best-79873-323705.jpg" alt="経験が裏付ける技術力に自信があります">
-       </div>
-       <div class="second-main-contents-boxL">
-        <p class="second-main-contents-explanationT"><span style="font-size: 120%; color: rgb(255, 61, 100);">専属建築士</span>が対応</p>
-        <p class="second-main-contents-explanationB">
-            ご相談時から弊社専属の建築士がご対応いたします。構造と空間設計の専門家が<span style="font-size: 135%; font-weight: 500;">“安全で快適性溢れる住まい”</span>”を実現します
-        </p>
-       </div>
-       <div class="second-main-contents-boxR">
-        <img class="second-main-contents-img" src="./images/pexels-lexovertoom-1109541.jpg" alt="建築の専門家が丁寧にご対応します">
-       </div>
-    </div>
-  </section>
-<!--  リフォーム  -->
-  <div id="reform"></div>
-  <section class="third-main-contents">
-    <div>
-      <h2>リフォーム</h2>
-      <div style="text-align: center;">
-        <img class="main-contents-img" src="./images/pexels-pixabay-276724.jpg" alt="思い描く施工を実施します">
+        <div class="second-box-CVT">
+          <button class="second-CVT-btn"><a href="https://www.lancers.jp/profile/yoinasyobo">注文する</a></button>
+        </div>
       </div>
-      <p class="main-contents-title">新鮮さが吹き抜けるリフォーム</p>
-      <p class="main-contents-title-explanation">
-        長い月日の中で、どうしても今のご自身やご家族にとって合わない部分が出てくるかもしれません。「昔より落ち着いた色合いにしたい」「階段を上がりやすくしたい」など。弊社はその時浮かんだご住人様の希望を、ご住人様とお住まいにとって最適な方法で実現させます。
-      </p>
-    </div> 
-    <div class="third-main-contents-wrapper">
-              <div>
-                <div><img src="./images/pexels-rquiros-2219024.jpg" class="third-main-contents-wrapper-img" alt="全ての工程を責任を持って請けます"></div>
-                <p class="third-main-contents-wrapper-title">弊社一貫施工</p>
-              </div>
-              <div>
-                <div><img src="./images/pexels-ketut-subiyanto-4963437.jpg" class="third-main-contents-wrapper-img" alt="施工後もサポートし続けます"></div>
-                <p class="third-main-contents-wrapper-title">安心のアフターサポート</p>
-              </div>
-              <div>
-                <div><img src="./images/pexels-lexovertoom-1109541.jpg" class="third-main-contents-wrapper-img" alt="お気軽にお申し付けください"></div>
-                <p class="third-main-contents-wrapper-title">お見積もり無料</p>
-              </div>
-              <div>
-                <div><img src="./images/pexels-pixabay-271667.jpg" class="third-main-contents-wrapper-img" alt="お金のご相談にも丁寧にご対応します"></div>
-                <p class="third-main-contents-wrapper-title">補助金活用支援</p>
-              </div>
     </div>
   </section>
-<!--  会社概要  -->
+<!--  Eauipment／設備  -->
+  <div id="achievements"></div>
+  <section class="third-section" style="background-color: #ffffff;">
+    <h2 class="third-section-title">
+      Eauipment／設備<br>
+    </h2>
+    <p class="third-title-underline"><img src="./images/section-title-underline-blue.webp" alt="タイトルアンダーライン"></p>
+    <p class="third-section-text">弊社製品は高い安全性が保証された自社工場にて製造されています。高性能な検査機器を駆使し、製品の精度・品質を徹底的に管理することで最良の品質を維持しております。</p>
+    <div class="third-section-contents">
+      <div class="third-contents-box">
+        <p class="third-box-pic">
+          <img src="./images/pexels-antonmislawsky-246753.webp" alt="ラッパねじ">
+        </p>
+        <p class="third-box-title">三次元測定機など保有</p>
+      </div>
+      <div class="third-contents-box">
+        <p class="third-box-pic">
+          <img src="./images/pexels-pixabay-269077.webp" alt="六角ボルト">
+        </p>
+        <p class="third-box-title">ISO9001取得工場</p>
+      </div>
+    </div>
+  </section>
+<!--  Voices／お客様の声  -->
+  <div id="achievements"></div>
+  <section class="fourth-section">
+    <h2 class="fourth-section-title">
+      Voices／お客様の声<br>
+    </h2>
+    <p class="fourth-title-underline"><img src="./images/section-title-underline-white.webp" alt="タイトルアンダーライン"></p>
+    <div class="fourth-section-contents-3">
+       <div class="fourth-contents-box-1">
+        <p class="fourth-box-title">航空機製造メーカー様</p>
+        <p class="fourth-box-text">
+          「素材や公差への要求が厳しい航空部品でも、的確な対応力に驚かされました。ISO認証の安心感と、三次元測定機による品質保証体制で、社内検査の手間も大幅に軽減されています。」
+        </p>
+       </div>
+       <div class="fourth-contents-box-2">
+        <img class="fourth-box-img-2" src="./images/fifth-section-image-2.webp" alt="ご家族で喜べる住宅をご提供します">
+       </div>
+       <div class="fourth-contents-box-1">
+        <p class="fourth-box-title"> 自動車部品製造メーカー様</p>
+        <p class="fourth-box-text">
+          「ねじの精度が上がったことで、組み立て時の不具合が激減。小ロットの試作にもスピーディに対応してもらえて開発が加速しました。技術的な相談にも的確に応えてくれるのが本当に心強いです。」
+        </p>
+       </div>
+       <div class="fourth-contents-box-2">
+        <img class="fourth-box-img-2" src="./images/fifth-section-image-1.webp" alt="どなたでも満足できる売却価格を実現します">
+       </div>
+    </div>
+  </section>
+<!--  FAQ／よくある質問  -->
+  <section class="fifth-section" id="FAQ">
+    <h2 class="fifth-section-title" >
+      よくある質問
+    </h2>
+    <p class="fifth-title-underline"><img src="./images/section-title-underline-blue.webp" alt="タイトルアンダーライン"></p>
+    <div class="fifth-contents">
+      <div class="fifth-box">
+        <button class="fifth-box-btn"><span>最小ロットはいくつから対応していますか？</span></button>
+        <div class="fifth-box-text"><span>小ロット（1個〜）から対応可能です。試作品や限定用途にも柔軟に対応いたします。</span></div>
+      </div>
+      <div class="fifth-box">
+        <button class="fifth-box-btn"><span>納期はどれくらいかかりますか？</span></button>
+        <div class="fifth-box-text"><span>標準品は約5営業日、特注品は内容により異なります。お急ぎの案件もご相談ください。</span></div>
+      </div>
+      <div class="fifth-box">
+        <button class="fifth-box-btn"><span>寸法公差はどの程度まで対応できますか？</span></button>
+        <div class="fifth-box-text"><span>±0.01mmの高精度まで対応可能です。用途に応じた調整も承ります。</span></div>
+      </div>
+      <div class="fifth-box">
+        <button class="fifth-box-btn"><span>どんな材質のねじが製造可能ですか？</span></button>
+        <div class="fifth-box-text"><span>チタン、ステンレス、真鍮、アルミに対応しています。特殊材質についてもご相談ください。</span></div>
+      </div>
+      <div class="fifth-box">
+        <button class="fifth-box-btn"><span>表面処理（メッキ・塗装）は可能ですか？</span></button>
+        <div class="fifth-box-text"><span>可能です。ニッケルメッキ、黒染め、各種コーティングなどご提案いたします。</span></div>
+      </div>
+      <div class="fifth-box">
+        <button class="fifth-box-btn"><span>図面がなくても注文できますか？</span></button>
+        <div class="fifth-box-text"><span>はい。現物支給や仕様ヒアリングから図面作成まで対応可能です。</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--  Company／会社概要  -->
 <div id="company"></div>
-  <section class="fourth-main-contents">
+  <section class="seventh-section">
     <div>
-      <h2>会社概要</h2>
-      <div style="text-align: center;">
-        <img class="main-contents-img" src="./images/pexels-pixabay-269077.jpg" alt="テックタウンの中心地に本社があります">
+      <h2 class="seventh-section-title" >
+        Company／会社概要
+      </h2>
+      <p class="seventh-title-underline"><img src="./images/section-title-underline-blue.webp" alt="タイトルアンダーライン"></p>
+    </div>
+    <div class="seventh-contents">
+      <div class="seventh-box-1">
+        <img src="./images/company-logo.webp" alt="">
       </div>
-      <p class="main-contents-title-explanation">
-        感建の本社は日本有数のテックタウンの中心地にあります。最先端技術が集約されたこの街の一員として、地域住民の皆様と共に歩んでまいりたいと思います。
-      </p>
-    </div> 
-    <article style="padding-top: 5%;">
-      <dl class="fourth-main-contents-wrapper">
-        <dt>会社名</dt>
-        <dd>株式会社感成住宅建設</dd>
-        <dt>代表者名</dt>
-        <dd>幹貞治</dd>
-        <dt>事業内容</dt>
-        <dd>新築住宅・中古住宅販売、リフォーム工事</dd>
-        <dt>設立年</dt>
-        <dd>1995年9月5日</dd>
-        <dt>資本金</dt>
-        <dd>10,000千円</dd>
-        <dt>所在地</dt>
-        <dt>東京都東京市東京区1-1</dt>
-      </dl>
-    </article>
+      <article>
+        <dl class="seventh-box-2">
+          <dt>会社名</dt>
+          <dd>株式会社感成工業</dd>
+          <dt>所在地</dt>
+          <dt>○○県○○市○○町100番地</dt>
+          <dt>電話番号</dt>
+          <dt>00-0000-0000</dt>
+        </dl>
+      </article>
     </div>
   </section>
-<!--  お問い合わせ  --><!-- このデモLPではフォームの代わりにイメージ画像を配置しています -->
-<div id="contact"></div>
-  <section class="fifth-main-contents-wrapper">
-    <div>
-      <h2>お問い合わせ</h2>
-      <div class="fifth-main-contents-box">
-        <img class="fifth-main-contents-box-img" src="./images/お問い合わせフォームデザイン_tpl_0001.png" alt="お問い合わせフォームです。入力できない場合は電話番号からお願いいたします">
-      </div>
-    </div>
-  </section>
-<!--  会社情報とコピーライト  -->
+  <div style="position: relative;">
+    <!--hrefのURLはランサーズの令イ成書房プロフィールリンクです-->
+    <button class="cta2"><a href="https://www.lancers.jp/profile/yoinasyobo">お問い合わせはこちら</a></button>
+  </div>
+<!--  コピーライト  -->
   <section class="footer">
     <div>
-      Kanseijutakukensetu©All Rights Reserved<br>これは令イ成書房のポートフォリオLPです。実在する団体や個人などいかなるものと一切関係ございません
+      Kanseihudosan©All Rights Reserved<br>これは令イ成書房のポートフォリオLPです。実在する団体や個人などいかなるものと一切関係ございません
     </div>
   </section>
   </div>
   <script>
-        document.querySelectorAll('button[data-target]').forEach(btn => {
-            btn.addEventListener('click' , () => {
-                const targetId = btn.getAttribute('data-target');
-                const targetEl = document.getElementById(targetId);
-                if(targetEl){
-                    targetEl.scrollIntoView({ behavior: 'smooth' });
-                }
-            });
+    document.addEventListener('DOMContentLoaded', function () {
+
+      // スムーススクロール処理
+      document.querySelectorAll('button[data-target]').forEach(btn => {
+        btn.addEventListener('click' , () => {
+          const targetId = btn.getAttribute('data-target');
+          const targetEl = document.getElementById(targetId);
+          if(targetEl){
+            targetEl.scrollIntoView({ behavior: 'smooth' });
+          }
         });
+      });
+
+      // ハンバーガーメニューの動作/1.class情報を取得
+      const hamburger = document.getElementById('hamburger');
+      const navLinks = document.getElementById('navLinks');
+
+      // ハンバーガーメニューの動作/2.ハンバーガーをクリックしたらメニュー開閉
+      hamburger.addEventListener('click', function () {
+        navLinks.classList.toggle('active');
+        document.body.classList.toggle('no-scroll');
+      });
+
+      // ハンバーガーメニューの動作/3.ハンバーガーメニュー内のボタンだけ取得
+      const menuButtons = navLinks.querySelectorAll('button');
+
+      // ハンバーガーメニューの動作/4.それぞれのボタンにイベント追加
+      menuButtons.forEach(button => {
+        button.addEventListener('click', function () {
+          if (navLinks.classList.contains('active')) {
+            navLinks.classList.remove('active');
+            document.body.classList.remove('no-scroll');
+          }
+        });
+      });
+
+      // クリックで質問に対しての回答を表示（よくある質問）/1.class情報を取得
+      const accordionButtons = document.querySelectorAll('.fifth-box-btn');
+
+      // クリックで質問に対しての回答を表示（よくある質問）/2.質問を押したら押したら回答を開く
+      accordionButtons.forEach(button => {
+        button.addEventListener('click',() =>{
+          const answer = button.nextElementSibling;
+          answer.classList.toggle('active');
+        });
+      });
+    });
   </script>
   </body>
 </html>
